@@ -1,79 +1,104 @@
-# Noël Prestige
+# Noël Prestige — site de contenu
 
-Boutique de **cadeaux d'exception**, en français.
-Site statique, **fichier HTML unique**, sans aucune dépendance externe.
+Sélection éditoriale de cadeaux d'exception pour Noël.
+Site statique, sans panier, sans paiement, sans collecte de données.
 
-Thème sombre, or & noir. Édition limitée 2026. Livraison offerte dès 50 000 FCFA.
+**En ligne :** https://noel-prestige.onrender.com
 
-## Démarrage
+## Ce que c'est
 
-Ouvrir directement `index.html` dans un navigateur, ou servir le dossier :
+Un site de contenu organisé par univers de cadeau, construit pour le
+référencement naturel. Chaque univers a sa propre URL, son propre texte et
+ses propres données structurées.
 
-```bash
-python -m http.server 8000
-# http://localhost:8000/
-```
-
-## Fonctionnalités
-
-- **Catalogue piloté par les données** — le tableau `CATALOG` alimente les cartes,
-  les fiches produit, les filtres et le panier.
-- **Illustrations SVG** intégrées en ligne (aucun appel réseau), dessinées en thème or/sombre.
-- **Recherche** insensible aux accents, filtres promo / bestseller / favoris, tri par prix.
-- **Sélecteur de cadeau** : destinataire + budget.
-- **Fiche produit** : caractéristiques, quantité, avis, « souvent achetés ensemble ».
-- **Avis clients** avec note par étoiles et photo compressée côté client.
-- **Wishlist** (cœur) persistante.
-- **Panier** persistant : quantités, suppression, barre de progression vers la livraison offerte.
-- **Codes promo** : `NOEL15` (−15 %) et `PRESTIGE10` (−10 %). La newsletter applique
-  automatiquement `NOEL15` au panier.
-- **Checkout** en deux étapes : récapitulatif puis formulaire, confirmation avec référence `NP-XXXXXX`.
-- **Compte à rebours** jusqu'au 25 décembre.
-- **Mentions légales** en 5 onglets : mentions légales, CGV, confidentialité, cookies, contact.
-- **SEO** : meta description, Open Graph, Twitter card, favicon SVG, JSON-LD `OnlineStore`.
-
-
-## Couche conversion
-
-Éléments ajoutés pour transformer le visiteur en acheteur :
-
-- **Barre de réassurance** sous le hero (livraison, paiement Mobile Money, emballage premium, retours) — lève les freins avant le scroll.
-- **Preuve sociale chiffrée** dans le hero (clients, note moyenne, délai de livraison, retours).
-- **Urgence sur les fiches produit** : stock faible, compte à rebours de fin de promo borné entre 45 min et 60 h, et nombre de spectateurs.
-- **Panneau « ajouté au panier »** qui suit l'ajout : récapitulatif du panier, barre vers la livraison offerte, et double CTA (continuer / voir le panier).
-
-Le compte à rebours de promo est recalculé à chaque chargement à partir d'une ancre
-stable par produit, avec une échéance toujours future et crédible.
+| | |
+|---|---|
+| Pages | 18 |
+| Univers | 6 |
+| Fiches produit | 8 |
+| Pages institutionnelles | 3 |
+| Technologie | HTML, CSS et JavaScript statiques |
+| Dépendances | aucune |
+| Build | aucun |
 
 ## Structure
 
 ```
-index.html
-├── <style>    thème, composants, responsive
-└── <script>   ART → CATALOG → API → rendu → filtres → panier → checkout
+index.html                        accueil
+coffrets-cadeaux/                 univers + ses fiches
+montres/
+maroquinerie/
+degustation/
+maison/
+high-tech/
+a-propos/                         nos critères de sélection
+guide/                            la méthode en quatre questions
+mentions-legales/                 éditeur, données, prix
+assets/                           site.css, site.js, favicon.svg
+img/                              photographies produit
+sitemap.xml
+robots.txt
 ```
 
-## Persistance
+Les URL sont propres : `/montres/` sert `montres/index.html`, ce qui
+fonctionne sur tout hébergeur statique, y compris en ouverture directe d'un
+fichier sur le disque.
 
-| Clé | Contenu |
-|---|---|
-| `noel-prestige-cart` | Panier |
-| `noel-prestige-wishlist` | Favoris |
-| `noel-prestige-reviews` | Avis publiés |
-| `noel-prestige-orders` | Commandes |
-| `noel-prestige-newsletter` | Inscription newsletter |
+## Choix techniques
 
-## Backend
+**Pas de dépendance.** Ni framework, ni bundler, ni `node_modules`. Le dépôt
+se déploie tel quel, et le premier octet arrive aussi vite qu'un fichier
+statique.
 
-`API` est une couche d'abstraction prête à être branchée sur un vrai serveur
-(endpoint cible : `/api/orders`). Remplacez le corps de ses cinq méthodes par
-des appels `fetch()` ; le reste du front n'a pas à changer.
+**Pas de page unique avec routage.** Chaque page est un document HTML
+complet et distinct. Un moteur qui rend une seule page et change le contenu
+après coup force Google à exécuter du JavaScript pour lire la page. Ici,
+chaque URL est lisible directement dans la réponse HTTP.
 
-## Accessibilité
+**Pas de suivi.** Aucun cookie, aucun pixel, aucun service tiers de mesure
+d'audience. La seule ressource externe est la feuille de police Google, et
+rien n'est transmis à qui que ce soit.
 
-Navigation clavier complète, piège de focus dans les modales, `Échap` ferme la
-couche supérieure, attributs `aria`, et respect de `prefers-reduced-motion`.
+**Aucune donnée personnelle.** Pas de formulaire, pas de compte, pas de
+cookie. Le site fonctionne entièrement sans JavaScript : celui-ci ne sert
+qu'au menu mobile, à la révélation au défilement et aux accordéons.
+
+## Identité
+
+Thème sombre, or et ivoire, angles vifs, serif de titrage. La palette et
+les typographies sont définies en variables CSS dans `assets/site.css` : la
+modifier change l'ensemble du site sans toucher au HTML.
 
 ## Contenu
 
-Produits, avis et coordonnées sont **fictifs**, fournis à titre de démonstration.
+Les textes ne sont pas remplissés. Chaque univers explique ses propres
+critères de choix, et chaque fiche justifie la présence du produit dans la
+sélection par des caractéristiques vérifiables plutôt que par des promesses.
+
+Les prix indiqués sont des ordres de grandeur destinés à situer un budget.
+Ils ne constituent pas une offre et ne sont pas garantis.
+
+## Déploiement
+
+Render, via `render.yaml` (site statique, sans commande de build).
+Chaque `git push` sur `main` redéploie.
+
+## Accessibilité
+
+Navigation au clavier complète, lien d'évitement, `aria-current` sur la page
+courante, focus visible, contrastes vérifiés, respect de
+`prefers-reduced-motion`, et un seul `h1` par page.
+
+## Vérification
+
+Le dépôt est contrôlé avant chaque déploiement : structure HTML, résolution
+de tous les liens internes, présence des images, unicité et longueur des
+balises SEO, validité des données structurées, intégrité du texte français,
+et chargement sans erreur JavaScript.
+
+## Photographies
+
+Les photographies de produit proviennent des sources fournies pour ce projet.
+Deux produits sans photographie légitime utilisent une illustration
+vectorielle de substitution, générée à la volée, afin d'éviter toute image
+cassée.

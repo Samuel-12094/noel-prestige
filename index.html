@@ -1,3153 +1,352 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Noël Prestige : cadeaux d'exception — coffrets, montres, maroquinerie, dégustation. Édition limitée 2026, livraison offerte dès 50 000 FCFA, paiement sécurisé Mobile Money.">
-    <meta name="theme-color" content="#0a0a0a">
-    <meta name="author" content="Noël Prestige">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://noel-prestige.bj/">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Noël Prestige">
-    <meta property="og:locale" content="fr_BJ">
-    <meta property="og:title" content="Noël Prestige — Cadeaux d'exception">
-    <meta property="og:description" content="Une sélection exclusive de cadeaux d'exception pour marquer les esprits. Édition limitée 2026.">
-    <meta property="og:url" content="https://noel-prestige.bj/">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Noël Prestige — Cadeaux d'exception">
-    <meta name="twitter:description" content="Coffrets, montres, maroquinerie et dégustation. Livraison offerte dès 50 000 FCFA.">
-    <title>Noël Prestige — Cadeaux d'Exception</title>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "OnlineStore",
-      "name": "Noël Prestige",
-      "description": "Boutique de cadeaux d'exception, édition limitée 2026.",
-      "url": "https://noel-prestige.bj/",
-      "telephone": "+22996123456",
-      "email": "contact@noelprestige.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Cotonou",
-        "addressCountry": "BJ"
-      },
-      "currenciesAccepted": "XOF",
-      "paymentAccepted": "MTN Mobile Money, Moov Money, Carte bancaire, Espèces",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "2540"
-      }
-    }
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        :root {
-            --gold: #c9a84c;
-            --ease: cubic-bezier(0.22, 1, 0.36, 1);
-            --heart-mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2020.2S3.6%2015.2%203.6%209.4A4.4%204.4%200%200%201%2012%207.2a4.4%204.4%200%200%201%208.4%202.2c0%205.8-8.4%2010.8-8.4%2010.8z%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.7%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E");
-            --heart-fill-mask: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M12%2020.4S3.4%2015.1%203.4%209.2A4.6%204.6%200%200%201%2012%206.9a4.6%204.6%200%200%201%208.6%202.3c0%205.9-8.6%2011.2-8.6%2011.2z%22%2F%3E%3C%2Fsvg%3E");
-            --gold-light: #e8d48b;
-            --dark: #0a0a0a;
-            --dark-card: #141414;
-            --cream: #f5f0e8;
-            --white: #ffffff;
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--dark);
-            color: var(--white);
-            overflow-x: hidden;
-        }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noël Prestige 2026 : idées cadeaux par univers</title>
+<meta name="description" content="Des cadeaux d&#39;exception, choisis un par un. Pas de catalogue infini : huit pièces longuement regardées, dont on peut dire précisément ce qu&#39;elles ont de…">
+<link rel="canonical" href="https://noel-prestige.onrender.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#c9a84c">
 
-        /* NAV */
-        nav {
-            position: fixed; top: 0; width: 100%; z-index: 1000;
-            background: rgba(10,10,10,0.95);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(201,168,76,0.2);
-            padding: 18px 40px;
-            display: flex; justify-content: space-between; align-items: center;
-        }
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.6rem; font-weight: 700;
-            color: var(--gold);
-            letter-spacing: 2px;
-        }
-        .nav-links { display: flex; gap: 35px; align-items: center; }
-        .nav-links a {
-            color: var(--cream); text-decoration: none;
-            font-size: 0.85rem; font-weight: 500;
-            letter-spacing: 1px; text-transform: uppercase;
-            transition: color 0.3s;
-        }
-        .nav-links a:hover { color: var(--gold); }
-        .cart-btn {
-            background: var(--gold); color: var(--dark);
-            border: none; padding: 10px 22px;
-            font-weight: 700; font-size: 0.85rem;
-            cursor: pointer; border-radius: 3px;
-            letter-spacing: 1px;
-            transition: all 0.3s;
-        }
-        .cart-btn:hover { background: var(--gold-light); transform: scale(1.05); }
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Noël Prestige">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Noël Prestige 2026 : idées cadeaux par univers">
+<meta property="og:description" content="Des cadeaux d&#39;exception, choisis un par un. Pas de catalogue infini : huit pièces longuement regardées, dont on peut dire précisément ce qu&#39;elles ont de…">
+<meta property="og:url" content="https://noel-prestige.onrender.com/">
+<meta property="og:image" content="https://noel-prestige.onrender.com/img/coffret-or.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Noël Prestige 2026 : idées cadeaux par univers">
+<meta name="twitter:description" content="Des cadeaux d&#39;exception, choisis un par un. Pas de catalogue infini : huit pièces longuement regardées, dont on peut dire précisément ce qu&#39;elles ont de…">
+<meta name="twitter:image" content="https://noel-prestige.onrender.com/img/coffret-or.jpg">
 
-        /* HERO */
-        .hero {
-            min-height: 100vh;
-            display: flex; align-items: center; justify-content: center;
-            text-align: center;
-            position: relative;
-            background: radial-gradient(ellipse at center, #1a1508 0%, #0a0a0a 70%);
-            padding: 120px 40px 80px;
-        }
-        .hero::before {
-            content: '';
-            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c9a84c' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        }
-        .hero-content { position: relative; z-index: 2; max-width: 900px; }
-        .hero-badge {
-            display: inline-block;
-            background: rgba(201,168,76,0.15);
-            border: 1px solid var(--gold);
-            color: var(--gold);
-            padding: 8px 24px; border-radius: 50px;
-            font-size: 0.8rem; letter-spacing: 3px; text-transform: uppercase;
-            margin-bottom: 30px;
-        }
-        .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(2.8rem, 6vw, 5rem);
-            font-weight: 900; line-height: 1.1;
-            margin-bottom: 25px;
-            background: linear-gradient(135deg, var(--white) 0%, var(--gold-light) 50%, var(--gold) 100%);
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .hero p {
-            font-size: 1.2rem; color: rgba(245,240,232,0.7);
-            max-width: 600px; margin: 0 auto 40px;
-            line-height: 1.8; font-weight: 300;
-        }
-        .hero-cta {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--gold), #b8942e);
-            color: var(--dark); text-decoration: none;
-            padding: 18px 50px; font-weight: 700;
-            font-size: 1rem; letter-spacing: 2px; text-transform: uppercase;
-            border-radius: 3px;
-            transition: all 0.3s;
-            box-shadow: 0 10px 40px rgba(201,168,76,0.3);
-        }
-        .hero-cta:hover { transform: translateY(-3px); box-shadow: 0 15px 50px rgba(201,168,76,0.4); }
-
-        /* COUNTDOWN */
-        .countdown-section {
-            background: var(--dark-card);
-            border-top: 1px solid rgba(201,168,76,0.15);
-            border-bottom: 1px solid rgba(201,168,76,0.15);
-            padding: 40px 40px;
-            text-align: center;
-        }
-        .countdown-label {
-            color: var(--gold); font-size: 0.85rem;
-            letter-spacing: 3px; text-transform: uppercase;
-            margin-bottom: 20px;
-        }
-        .countdown {
-            display: flex; justify-content: center; gap: 30px;
-        }
-        .countdown-item { text-align: center; }
-        .countdown-num {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem; font-weight: 700;
-            color: var(--gold);
-        }
-        .countdown-text {
-            font-size: 0.75rem; color: rgba(245,240,232,0.5);
-            letter-spacing: 2px; text-transform: uppercase;
-        }
-
-        /* PRODUCTS */
-        .products-section { padding: 100px 40px; max-width: 1300px; margin: 0 auto; }
-        .section-header { text-align: center; margin-bottom: 60px; }
-        .section-header h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.8rem; font-weight: 700;
-            margin-bottom: 15px;
-        }
-        .section-header p { color: rgba(245,240,232,0.6); font-size: 1.05rem; }
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-        .product-card {
-            background: var(--dark-card);
-            border: 1px solid rgba(201,168,76,0.1);
-            border-radius: 8px;
-            overflow: hidden;
-            transition: all 0.4s;
-        }
-        .product-card:hover {
-            transform: translateY(-8px);
-            border-color: rgba(201,168,76,0.4);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-        }
-        .product-img {
-            height: 280px;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 5rem;
-            position: relative;
-            background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
-        }
-        .product-badge {
-            position: absolute; top: 15px; left: 15px;
-            background: var(--gold); color: var(--dark);
-            padding: 5px 14px; font-size: 0.7rem;
-            font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
-            border-radius: 3px;
-        }
-        .product-badge.promo { background: var(--gold-light); color: var(--dark); }
-        .product-badge.nouveau { background: transparent; color: var(--gold); border: 1px solid var(--gold); }
-        .product-info { padding: 25px; }
-        .product-info h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.3rem; margin-bottom: 8px;
-        }
-        .product-info .desc {
-            color: rgba(245,240,232,0.5);
-            font-size: 0.9rem; line-height: 1.6;
-            margin-bottom: 15px;
-        }
-        .product-price {
-            display: flex; align-items: center; gap: 12px;
-            margin-bottom: 18px;
-        }
-        .price-current {
-            font-size: 1.5rem; font-weight: 700;
-            color: var(--gold);
-        }
-        .price-old {
-            font-size: 1rem; color: rgba(245,240,232,0.4);
-            text-decoration: line-through;
-        }
-        .add-to-cart {
-            width: 100%;
-            background: transparent;
-            border: 1px solid var(--gold);
-            color: var(--gold);
-            padding: 14px; font-weight: 600;
-            font-size: 0.85rem; letter-spacing: 1px;
-            text-transform: uppercase;
-            cursor: pointer; border-radius: 3px;
-            transition: all 0.3s;
-        }
-        .add-to-cart:hover {
-            background: var(--gold); color: var(--dark);
-        }
-
-        /* FEATURES */
-        .features {
-            background: var(--dark-card);
-            border-top: 1px solid rgba(201,168,76,0.15);
-            padding: 80px 40px;
-        }
-        .features-grid {
-            max-width: 1100px; margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 40px;
-            text-align: center;
-        }
-        .feature-icon { font-size: 2.5rem; margin-bottom: 15px; }
-        .feature h4 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.1rem; margin-bottom: 8px;
-        }
-        .feature p { color: rgba(245,240,232,0.5); font-size: 0.85rem; line-height: 1.6; }
-
-        /* TESTIMONIALS */
-        .testimonials { padding: 100px 40px; max-width: 1100px; margin: 0 auto; }
-        .testimonials .section-header h2 { font-size: 2.5rem; }
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        .testimonial-card {
-            background: var(--dark-card);
-            border: 1px solid rgba(201,168,76,0.1);
-            border-radius: 8px;
-            padding: 35px;
-        }
-        .testimonial-stars { color: var(--gold); font-size: 1.1rem; margin-bottom: 15px; }
-        .testimonial-text {
-            color: rgba(245,240,232,0.8);
-            font-size: 0.95rem; line-height: 1.8;
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-        .testimonial-author {
-            font-weight: 600; font-size: 0.9rem;
-            color: var(--gold);
-        }
-
-        /* NEWSLETTER */
-        .newsletter {
-            background: linear-gradient(135deg, #1a1508, #0a0a0a);
-            border-top: 1px solid rgba(201,168,76,0.2);
-            padding: 80px 40px;
-            text-align: center;
-        }
-        .newsletter h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.2rem; margin-bottom: 15px;
-        }
-        .newsletter p {
-            color: rgba(245,240,232,0.6);
-            margin-bottom: 30px; font-size: 1rem;
-        }
-        .newsletter-form {
-            display: flex; max-width: 500px; margin: 0 auto;
-            gap: 0;
-        }
-        .newsletter-form input {
-            flex: 1;
-            background: var(--dark-card);
-            border: 1px solid rgba(201,168,76,0.3);
-            color: var(--white);
-            padding: 16px 24px;
-            font-size: 0.95rem;
-            border-radius: 3px 0 0 3px;
-            outline: none;
-        }
-        .newsletter-form input:focus { border-color: var(--gold); }
-        .newsletter-form button {
-            background: var(--gold); color: var(--dark);
-            border: none; padding: 16px 30px;
-            font-weight: 700; font-size: 0.85rem;
-            letter-spacing: 1px; text-transform: uppercase;
-            cursor: pointer;
-            border-radius: 0 3px 3px 0;
-            transition: background 0.3s;
-        }
-        .newsletter-form button:hover { background: var(--gold-light); }
-
-        /* FOOTER */
-        footer {
-            background: #050505;
-            padding: 60px 40px 30px;
-            border-top: 1px solid rgba(201,168,76,0.1);
-        }
-        .footer-grid {
-            max-width: 1200px; margin: 0 auto;
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-        .footer-brand .logo { font-size: 1.4rem; margin-bottom: 15px; display: block; }
-        .footer-brand p { color: rgba(245,240,232,0.4); font-size: 0.85rem; line-height: 1.7; }
-        footer h5 {
-            color: var(--gold); font-size: 0.8rem;
-            letter-spacing: 2px; text-transform: uppercase;
-            margin-bottom: 18px;
-        }
-        footer ul { list-style: none; }
-        footer ul li { margin-bottom: 10px; }
-        footer ul li a {
-            color: rgba(245,240,232,0.5); text-decoration: none;
-            font-size: 0.85rem; transition: color 0.3s;
-        }
-        footer ul li a:hover { color: var(--gold); }
-        .footer-bottom {
-            max-width: 1200px; margin: 0 auto;
-            padding-top: 25px;
-            border-top: 1px solid rgba(255,255,255,0.05);
-            text-align: center;
-            color: rgba(245,240,232,0.3);
-            font-size: 0.8rem;
-        }
-
-        /* CART MODAL */
-        .cart-modal {
-            display: none;
-            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0,0,0,0.8);
-            z-index: 2000;
-            align-items: center; justify-content: center;
-        }
-        .cart-modal.active { display: flex; }
-        .cart-content {
-            background: var(--dark-card);
-            border: 1px solid rgba(201,168,76,0.3);
-            border-radius: 12px;
-            padding: 40px;
-            max-width: 500px; width: 90%;
-            max-height: 80vh;
-            overflow-y: auto;
-        }
-        .cart-content h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem; margin-bottom: 25px;
-            color: var(--gold);
-        }
-        .cart-item {
-            display: flex; justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-        }
-        .cart-item-name { font-size: 0.9rem; }
-        .cart-item-price { color: var(--gold); font-weight: 600; }
-        .cart-total {
-            display: flex; justify-content: space-between;
-            padding: 20px 0;
-            font-size: 1.2rem; font-weight: 700;
-        }
-        .checkout-btn {
-            width: 100%;
-            background: var(--gold); color: var(--dark);
-            border: none; padding: 16px;
-            font-weight: 700; font-size: 0.9rem;
-            letter-spacing: 1px; text-transform: uppercase;
-            cursor: pointer; border-radius: 3px;
-            margin-top: 15px;
-        }
-        .close-cart {
-            float: right;
-            background: none; border: none;
-            color: var(--white); font-size: 1.5rem;
-            cursor: pointer;
-        }
-
-        /* WISHLIST */
-        .wish-btn {
-            position: absolute; top: 14px; right: 14px;
-            width: 38px; height: 38px;
-            background: rgba(10,10,10,0.6);
-            border: 1px solid rgba(201,168,76,0.3);
-            border-radius: 50%;
-            font-size: 1rem; line-height: 1;
-            cursor: pointer; z-index: 2;
-            display: flex; align-items: center; justify-content: center;
-            transition: transform 0.3s, background 0.3s, border-color 0.3s;
-        }
-        .wish-btn:hover { transform: scale(1.18); border-color: var(--gold); }
-
-        .wish-btn.active { background: var(--gold); border-color: var(--gold); }
-
-        .wish-btn.active:hover { transform: scale(1.28); }
-
-        /* GIFT FINDER */
-        .finder { padding: 0 40px 100px; max-width: 1000px; margin: 0 auto; }
-        .finder-box {
-            background: var(--dark-card);
-            border: 1px solid rgba(201,168,76,0.2);
-            border-radius: 12px;
-            padding: 32px;
-            display: grid;
-            grid-template-columns: 1fr 1fr auto;
-            gap: 20px;
-            align-items: end;
-        }
-        .finder-field label {
-            display: block;
-            font-size: 0.72rem; font-weight: 600;
-            letter-spacing: 2px; text-transform: uppercase;
-            color: var(--gold);
-            margin-bottom: 10px;
-        }
-        .finder-field select {
-            width: 100%;
-            background: var(--dark);
-            border: 1px solid rgba(201,168,76,0.25);
-            border-radius: 3px;
-            padding: 14px 16px;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.9rem; color: var(--white);
-            outline: none; cursor: pointer;
-            transition: border-color 0.3s, box-shadow 0.3s;
-        }
-        .finder-field select option { background: var(--dark-card); color: var(--white); }
-        .finder-field select:focus {
-            border-color: var(--gold);
-            box-shadow: 0 0 0 3px rgba(201,168,76,0.1);
-        }
-        .finder-btn {
-            background: linear-gradient(135deg, var(--gold), #b8942e);
-            color: var(--dark); border: none;
-            padding: 15px 32px;
-            font-family: 'Inter', sans-serif;
-            font-weight: 700; font-size: 0.8rem;
-            letter-spacing: 2px; text-transform: uppercase;
-            cursor: pointer; border-radius: 3px;
-            white-space: nowrap;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .finder-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(201,168,76,0.3); }
-        .finder-result {
-            text-align: center; margin-top: 22px;
-            font-size: 0.9rem; color: rgba(245,240,232,0.6);
-            min-height: 22px;
-        }
-        .finder-result b { color: var(--gold); }
-
-        /* BUDGET FILTER */
-        .budget-box { position: relative; flex: 0 1 230px; }
-        .budget-box select {
-            width: 100%;
-            background: var(--dark-card);
-            border: 1px solid rgba(201,168,76,0.2);
-            border-radius: 3px;
-            padding: 12px 16px;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.82rem; color: var(--white);
-            outline: none; cursor: pointer;
-            transition: border-color 0.3s, box-shadow 0.3s;
-        }
-        .budget-box select option { background: var(--dark-card); }
-        .budget-box select:focus {
-            border-color: var(--gold);
-            box-shadow: 0 0 0 3px rgba(201,168,76,0.1);
-        }
-
-        /* CHECKOUT MODAL */
-        .checkout-modal {
-            display: none;
-            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0,0,0,0.8);
-            backdrop-filter: blur(5px);
-            z-index: 2500;
-            align-items: center; justify-content: center;
-            padding: 20px;
-        }
-        .checkout-modal.active { display: flex; }
-        .checkout-content {
-            background: var(--dark-card);
-            border: 1px solid rgba(201,168,76,0.3);
-            border-radius: 12px;
-            padding: 38px;
-            max-width: 580px; width: 100%;
-            max-height: 90vh;
-            overflow-y: auto;
-            box-shadow: 0 25px 80px rgba(0,0,0,0.7);
-        }
-        .checkout-content h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.6rem; margin-bottom: 20px;
-            color: var(--gold);
-        }
-        .order-recap {
-            background: var(--dark);
-            border: 1px solid rgba(201,168,76,0.15);
-            border-radius: 6px;
-            padding: 18px 20px;
-            margin-bottom: 24px;
-            font-size: 0.85rem;
-        }
-        .order-recap .row {
-            display: flex; justify-content: space-between;
-            padding: 6px 0; color: rgba(245,240,232,0.7);
-        }
-        .order-recap .row.total {
-            border-top: 1px solid rgba(201,168,76,0.15);
-            margin-top: 8px; padding-top: 12px;
-            font-weight: 700; font-size: 1.05rem; color: var(--white);
-        }
-        .order-recap .row.discount { color: var(--gold); }
-        .field { margin-bottom: 17px; border: none; padding: 0; }
-        .field label, .field legend {
-            display: block;
-            font-size: 0.72rem; font-weight: 600;
-            letter-spacing: 2px; text-transform: uppercase;
-            color: var(--gold);
-            margin-bottom: 8px;
-        }
-        .field input, .field select, .field textarea {
-            width: 100%;
-            background: var(--dark);
-            border: 1px solid rgba(201,168,76,0.25);
-            border-radius: 3px;
-            padding: 13px 15px;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.9rem; color: var(--white);
-            outline: none; resize: vertical;
-            transition: border-color 0.3s, box-shadow 0.3s;
-        }
-        .field input::placeholder, .field textarea::placeholder { color: rgba(245,240,232,0.3); }
-        .field select option { background: var(--dark-card); }
-        .field input:focus, .field select:focus, .field textarea:focus {
-            border-color: var(--gold);
-            box-shadow: 0 0 0 3px rgba(201,168,76,0.1);
-        }
-        .field input:user-invalid, .field textarea:user-invalid { border-color: #e74c3c; }
-        .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-        .pay-options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-        .pay-opt {
-            display: flex !important; align-items: center; gap: 9px;
-            border: 1px solid rgba(201,168,76,0.25);
-            border-radius: 3px; padding: 13px 15px;
-            cursor: pointer; margin: 0 !important;
-            font-size: 0.85rem !important; font-weight: 500 !important;
-            letter-spacing: 0 !important; text-transform: none !important;
-            color: rgba(245,240,232,0.8);
-            transition: all 0.3s;
-        }
-        .pay-opt:hover { border-color: var(--gold); }
-        .pay-opt:has(input:checked) {
-            border-color: var(--gold); background: rgba(201,168,76,0.1); color: var(--gold);
-        }
-        .pay-opt input { width: auto; accent-color: var(--gold); }
-        .order-done { text-align: center; padding: 25px 0; }
-        .order-done .tick {
-            width: 78px; height: 78px; margin: 0 auto 22px;
-            background: var(--gold); color: var(--dark);
-            border-radius: 50%; font-size: 2.2rem;
-            display: flex; align-items: center; justify-content: center;
-        }
-        .order-done h4 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.6rem; color: var(--gold); margin-bottom: 12px;
-        }
-        .order-done p { font-size: 0.9rem; line-height: 1.8; margin-bottom: 8px; color: rgba(245,240,232,0.7); }
-        .order-ref {
-            display: inline-block; margin: 14px 0 20px;
-            background: var(--dark);
-            border: 1px dashed var(--gold);
-            border-radius: 3px; padding: 11px 24px;
-            font-weight: 700; letter-spacing: 3px; color: var(--gold);
-        }
-
-        /* FAQ */
-        .faq { padding: 0 40px 100px; max-width: 800px; margin: 0 auto; }
-        .faq-item {
-            background: var(--dark-card);
-            border: 1px solid rgba(201,168,76,0.1);
-            border-radius: 8px;
-            margin-bottom: 12px;
-            overflow: hidden;
-            transition: border-color 0.3s;
-        }
-        .faq-item.open { border-color: rgba(201,168,76,0.35); }
-        .faq-q {
-            width: 100%;
-            background: none; border: none;
-            font-family: 'Playfair Display', serif;
-            text-align: left;
-            padding: 22px 60px 22px 28px;
-            font-size: 1.05rem; font-weight: 700;
-            color: var(--white);
-            cursor: pointer;
-            position: relative;
-            transition: color 0.3s;
-        }
-        .faq-q:hover { color: var(--gold); }
-        .faq-q::after {
-            content: '+';
-            position: absolute; right: 28px; top: 50%;
-            transform: translateY(-50%);
-            font-size: 1.4rem; font-weight: 400;
-            color: var(--gold);
-            transition: transform 0.3s;
-        }
-        .faq-item.open .faq-q::after { transform: translateY(-50%) rotate(45deg); }
-        .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
-        .faq-a p {
-            padding: 0 28px 24px;
-            font-size: 0.9rem; line-height: 1.8;
-            color: rgba(245,240,232,0.6);
-        }
-
-        /* --- SYSTEME CATALOGUE (fiche produit, avis, legal) --- */
-        /* SOCIAL PROOF (hero) */
-        .hero-proof {
-            display: flex; gap: 28px; flex-wrap: wrap;
-            margin-top: 28px; padding-top: 24px;
-            border-top: 1px solid rgba(245,240,232,0.12);
-        }
-        .hero-proof div { line-height: 1.2; }
-        .hero-proof b {
-            display: block; font-size: 1.5rem; color: var(--gold); font-weight: 700;
-        }
-        .hero-proof span {
-            font-size: 0.75rem; color: var(--cream); opacity: 0.6;
-        }
-
-        /* REASSURANCE BAR */
-        .reassure {
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 18px; max-width: 1200px; margin: -30px auto 0; padding: 0 40px;
-            position: relative; z-index: 5;
-        }
-        .reassure-item {
-            background: var(--dark-card);
-            border-radius: 3px; padding: 18px 20px;
-            display: flex; gap: 12px; align-items: flex-start;
-            box-shadow: 0 8px 28px rgba(245,240,232,0.1);
-        }
-        .reassure-item .ri { font-size: 1.4rem; line-height: 1.2; }
-        .reassure-item b { display: block; font-size: 0.85rem; margin-bottom: 3px; }
-        .reassure-item p { font-size: 0.75rem; opacity: 0.6; line-height: 1.5; }
-
-        /* ADDED-TO-CART PANEL (conversion) */
-        .added-panel {
-            position: fixed; right: 20px; bottom: 20px; z-index: 2900;
-            background: var(--dark-card); color: var(--cream);
-            border-radius: 8px; box-shadow: 0 20px 60px rgba(245,240,232,0.3);
-            width: min(360px, calc(100vw - 40px));
-            transform: translateY(140%); transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.2);
-            overflow: hidden;
-        }
-        .added-panel.show { transform: translateY(0); }
-        .added-head {
-            display: flex; gap: 12px; align-items: center;
-            padding: 16px 18px; background: rgba(201,168,76,0.08);
-            border-bottom: 1px solid rgba(245,240,232,0.08);
-        }
-        .added-head .tick {
-            width: 30px; height: 30px; flex: 0 0 30px;
-            background: var(--gold); color: var(--dark-card);
-            border-radius: 3px; display: flex; align-items: center; justify-content: center;
-            font-size: 0.95rem; font-weight: 700;
-        }
-        .added-head b { display: block; font-size: 0.85rem; }
-        .added-head span { font-size: 0.72rem; opacity: 0.6; }
-        .added-items { max-height: 130px; overflow-y: auto; }
-        .added-line {
-            display: flex; justify-content: space-between; gap: 10px;
-            padding: 9px 18px; font-size: 0.8rem;
-            border-bottom: 1px solid rgba(245,240,232,0.05);
-        }
-        .added-line .mini { width: 26px; height: 26px; flex: 0 0 26px; }
-        .added-line .mini svg.art { width: 78%; height: 78%; }
-        .added-perks { padding: 12px 18px; font-size: 0.75rem; }
-        .added-perks div { display: flex; gap: 8px; align-items: center; padding: 3px 0; opacity: 0.75; }
-        .added-cta { display: flex; gap: 10px; padding: 0 18px 18px; }
-        .added-cta button {
-            flex: 1; padding: 12px; border-radius: 3px;
-            font-family: 'Poppins', sans-serif; font-size: 0.78rem; font-weight: 600;
-            letter-spacing: 0.5px; text-transform: uppercase; cursor: pointer;
-            transition: all 0.3s; border: 1px solid var(--gold); color: var(--gold); background: transparent;
-        }
-        .added-cta button:hover { background: var(--gold); color: var(--dark-card); }
-        .added-cta button.solid { background: var(--gold); color: var(--dark-card); }
-        .added-cta button.solid:hover { background: var(--gold-light); }
-
-        /* URGENCY TIMER sur carte */
-        .card-urgency {
-            display: flex; align-items: center; gap: 5px;
-            font-size: 0.7rem; font-weight: 600; color: var(--gold);
-            margin-bottom: 10px;
-        }
-        .card-urgency .pulse {
-            width: 6px; height: 6px; border-radius: 3px;
-            background: var(--gold); animation: pulse-dot 1.4s infinite;
-        }
-        @keyframes pulse-dot { 0%,100% { opacity: 1; } 50% { opacity: 0.25; } }
-        .card-viewers { font-size: 0.7rem; opacity: 0.5; margin-bottom: 10px; }
-
-        /* ICONES SVG (remplacent les emoji) */
-        .ic {
-            width: 1em; height: 1em;
-            flex: 0 0 auto;
-            vertical-align: -0.13em;
-            overflow: visible;
-        }
-        .logo .ic { width: 1.15em; height: 1.15em; }
-        .cart-btn .ic { margin-right: .35em; }
-        .category-icon { display: flex; justify-content: center; margin-bottom: 12px; }
-        .category-icon .ic { width: 34px; height: 34px; stroke-width: 1.2; color: var(--gold); transition: transform .35s var(--ease); }
-        .category-card:hover .category-icon .ic { transform: translateY(-3px) scale(1.06); }
-        .category-card.active .category-icon .ic { color: var(--gold-light); }
-        .reassure-item .ic, .feature .feature-icon .ic { width: 26px; height: 26px; stroke-width: 1.25; color: var(--gold); }
-        .feature-icon { display: flex; justify-content: center; margin-bottom: 12px; }
-        .search-icon { color: var(--cream); opacity: .45; }
-        .search-icon .ic { width: 17px; height: 17px; }
-        .no-results .big .ic { width: 46px; height: 46px; stroke-width: 1.1; color: var(--cream); opacity: .3; }
-        .hero-visual .ic { width: 100%; height: auto; }
-        .hero-visual .floating .ic { width: 34px; height: 34px; stroke-width: 1.4; }
-        .added-perks .ic, .added-line .ic { width: 15px; height: 15px; stroke-width: 1.7; }
-        .added-perks .ic { color: var(--gold); }
-        .photo-drop .ic, .review-form-toggle .ic { width: 1.05em; height: 1.05em; margin-right: .3em; vertical-align: -0.15em; }
-        .wish-btn::before, .wish-btn.active::before { font-size: 0; }
-        .wish-btn::after {
-            content: ''; position: absolute; inset: 0;
-            background: currentColor;
-            -webkit-mask: var(--heart-mask) center / 15px 15px no-repeat;
-            mask: var(--heart-mask) center / 15px 15px no-repeat;
-            color: var(--gold);
-        }
-        .wish-btn.active::after {
-            background: var(--gold);
-            -webkit-mask-image: var(--heart-fill-mask);
-            mask-image: var(--heart-fill-mask);
-        }
-        .added-panel .tick .ic { width: 15px; height: 15px; }
-        .tick { color: var(--dark); }
-        .review-form-toggle { display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
-        .photo-drop { display: flex; align-items: center; justify-content: center; gap: 8px; }
-        .star-row .ic { display: none; }
-        @media (prefers-reduced-motion: reduce) {
-            .category-card:hover .category-icon .ic { transform: none; }
-        }
-        /* LOADING SKELETON */
-        .skeleton {
-            background: var(--dark-card);
-            border-radius: 8px;
-            overflow: hidden;
-            height: 340px;
-            position: relative;
-        }
-        .skeleton::after {
-            content: '';
-            position: absolute; inset: 0;
-            background: linear-gradient(90deg, transparent, rgba(245,240,232,0.06), transparent);
-            animation: shimmer 1.2s infinite;
-        }
-        @keyframes shimmer {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
-        }
-
-        /* PRODUCT ART */
-        .product-img {
-            background: linear-gradient(150deg, var(--art-a, rgba(192,60,60,0.1)), var(--art-b, #ffe8e8));
-        }
-        .product-img svg.art {
-            width: 78%; height: 78%;
-            filter: drop-shadow(0 6px 14px rgba(245,240,232,0.16));
-            transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
-        }
-        .product-card:hover .product-img svg.art { transform: scale(1.09) rotate(-2deg); }
-
-        /* STOCK */
-        .stock-pill {
-            position: absolute; bottom: 12px; left: 12px;
-            background: rgba(10,10,10,0.65);
-            color: var(--gold-light);
-            padding: 3px 10px; font-size: 0.62rem;
-            font-weight: 600; letter-spacing: 0.5px;
-            border-radius: 20px;
-        }
-        .stock-pill.low { color: #c9a84c; }
-        .stock-pill.out { color: var(--gold); }
-
-        /* RATING */
-        .stars { color: #c9a84c; letter-spacing: 1px; font-size: 0.8rem; }
-        .stars .off { opacity: 0.25; }
-        .card-rating {
-            display: flex; align-items: center; gap: 6px;
-            margin-bottom: 10px;
-        }
-        .card-rating span { font-size: 0.72rem; opacity: 0.55; }
-
-        /* PRODUCT DETAIL MODAL */
-        .detail-modal {
-            display: none;
-            position: fixed; inset: 0;
-            background: rgba(245,240,232,0.6);
-            backdrop-filter: blur(5px);
-            z-index: 2400;
-            align-items: center; justify-content: center;
-            padding: 20px;
-        }
-        .detail-modal.active { display: flex; }
-        .detail-content {
-            background: var(--dark-card);
-            border-radius: 20px;
-            max-width: 900px; width: 100%;
-            max-height: 90vh; overflow-y: auto;
-            display: grid; grid-template-columns: 1fr 1fr;
-            position: relative;
-        }
-        .detail-art {
-            background: linear-gradient(150deg, var(--art-a, rgba(192,60,60,0.1)), var(--art-b, #ffe8e8));
-            display: flex; align-items: center; justify-content: center;
-            padding: 40px; min-height: 380px;
-            border-radius: 12px 0 0 12px;
-        }
-        .detail-art svg.art { width: 82%; height: auto; filter: drop-shadow(0 12px 24px rgba(245,240,232,0.2)); }
-        .detail-body { padding: 34px; }
-        .detail-body h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem; color: var(--gold);
-            margin: 10px 0 8px; line-height: 1.2;
-        }
-        .detail-body .desc { font-size: 0.9rem; line-height: 1.75; opacity: 0.75; margin-bottom: 18px; }
-        .feature-list { list-style: none; margin-bottom: 20px; }
-        .feature-list li {
-            font-size: 0.85rem; padding: 7px 0 7px 26px;
-            position: relative; opacity: 0.85;
-        }
-        .feature-list li::before {
-            content: '✓'; position: absolute; left: 0; top: 7px;
-            color: var(--gold); font-weight: 700;
-        }
-        .detail-price { display: flex; align-items: baseline; gap: 12px; margin-bottom: 20px; }
-        .detail-price .now { font-size: 1.9rem; font-weight: 700; color: var(--gold); }
-        .detail-price .was { font-size: 1rem; opacity: 0.4; text-decoration: line-through; }
-        .detail-price .save {
-            font-size: 0.7rem; font-weight: 700; color: var(--dark-card);
-            background: var(--gold); padding: 3px 9px; border-radius: 20px;
-        }
-        .detail-actions { display: flex; gap: 12px; align-items: center; }
-        .detail-actions .qty-control { flex: 0 0 auto; border-radius: 3px; }
-        .detail-actions .qty-btn { width: 40px; height: 44px; font-size: 1.1rem; }
-        .detail-actions .qty-value { min-width: 44px; font-size: 1rem; }
-        .detail-actions .add-to-cart { flex: 1; padding: 14px; font-size: 0.85rem; }
-
-        /* BUNDLE */
-        .bundle {
-            margin-top: 26px; padding-top: 20px;
-            border-top: 1px solid rgba(245,240,232,0.1);
-        }
-        .bundle h4 {
-            font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase;
-            color: var(--cream); opacity: 0.6; margin-bottom: 14px;
-        }
-        .bundle-items { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
-        .bundle-chip {
-            display: flex; align-items: center; gap: 9px;
-            background: #141414;
-            border: 1px solid rgba(245,240,232,0.08);
-            border-radius: 3px; padding: 8px 12px;
-            font-size: 0.78rem; font-weight: 500;
-        }
-        .bundle-chip .mini {
-            width: 34px; height: 34px; flex: 0 0 34px;
-            background: var(--dark-card); border-radius: 8px;
-            display: flex; align-items: center; justify-content: center;
-        }
-        .bundle-chip .mini svg.art { width: 74%; height: 74%; }
-        .bundle-total {
-            display: flex; justify-content: space-between; align-items: center;
-            font-size: 0.85rem; margin-bottom: 12px;
-        }
-        .bundle-total b { color: var(--gold); font-size: 1.1rem; }
-        .bundle-total del { opacity: 0.4; font-size: 0.8rem; margin-right: 8px; }
-
-        /* REVIEWS */
-        .reviews-head {
-            display: flex; align-items: center; gap: 16px;
-            margin-bottom: 18px; padding-bottom: 16px;
-            border-bottom: 1px solid rgba(245,240,232,0.1);
-        }
-        .reviews-score { font-size: 2.4rem; font-weight: 700; color: var(--gold); line-height: 1; }
-        .reviews-meta { font-size: 0.78rem; opacity: 0.6; }
-        .review {
-            padding: 14px 0; border-bottom: 1px solid rgba(245,240,232,0.07);
-        }
-        .review:last-child { border-bottom: none; }
-        .review-head {
-            display: flex; align-items: center; gap: 10px; margin-bottom: 6px;
-        }
-        .review-avatar {
-            width: 32px; height: 32px; flex: 0 0 32px;
-            background: #262626; color: var(--cream);
-            border-radius: 3px; display: flex; align-items: center; justify-content: center;
-            font-weight: 700; font-size: 0.8rem;
-        }
-        .review-who { font-size: 0.82rem; font-weight: 600; }
-        .review-when { font-size: 0.7rem; opacity: 0.45; margin-left: auto; }
-        .review-text { font-size: 0.85rem; line-height: 1.7; opacity: 0.78; }
-        .review-photo {
-            margin-top: 10px; max-width: 180px; border-radius: 3px;
-            display: block; cursor: zoom-in; border: 1px solid rgba(245,240,232,0.1);
-        }
-        .verified-tag {
-            font-size: 0.62rem; font-weight: 700; letter-spacing: 0.5px;
-            color: var(--gold-light); background: rgba(201,168,76,0.15);
-            padding: 2px 7px; border-radius: 20px;
-        }
-        .review-form-toggle {
-            width: 100%; margin-top: 16px; padding: 12px;
-            background: transparent; border: 1px dashed rgba(245,240,232,0.25);
-            border-radius: 3px; color: var(--cream);
-            font-family: 'Poppins', sans-serif; font-size: 0.82rem;
-            font-weight: 500; cursor: pointer;
-            transition: all 0.3s;
-        }
-        .review-form-toggle:hover { border-color: var(--gold); color: var(--gold); }
-        .star-input { display: flex; gap: 4px; margin-bottom: 6px; }
-        .star-input input { position: absolute; opacity: 0; width: 0; height: 0; }
-        .star-input label {
-            font-size: 1.5rem; color: rgba(245,240,232,0.2);
-            cursor: pointer; transition: color 0.2s, transform 0.2s;
-            line-height: 1;
-        }
-        .star-input label:hover, .star-input label:hover ~ label,
-        .star-input input:checked ~ label { color: #c9a84c; transform: scale(1.1); }
-        .photo-drop {
-            border: 1px dashed rgba(245,240,232,0.3);
-            border-radius: 3px; padding: 14px; text-align: center;
-            font-size: 0.78rem; opacity: 0.65; cursor: pointer;
-            transition: all 0.3s;
-        }
-        .photo-drop:hover { border-color: var(--gold); color: var(--gold); }
-        .photo-preview { margin-top: 10px; display: none; align-items: center; gap: 10px; }
-        .photo-preview.show { display: flex; }
-        .photo-preview img { width: 70px; height: 70px; object-fit: cover; border-radius: 8px; }
-        .btn-secondary {
-            background: var(--dark-card); color: var(--cream);
-            border: 1px solid rgba(245,240,232,0.2);
-            padding: 11px 20px; border-radius: 3px;
-            font-family: 'Poppins', sans-serif; font-size: 0.8rem;
-            font-weight: 600; cursor: pointer;
-            transition: all 0.3s;
-        }
-        .btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
-
-        /* PHOTO LIGHTBOX */
-        .lightbox {
-            display: none; position: fixed; inset: 0;
-            background: rgba(0,0,0,0.92); z-index: 3000;
-            align-items: center; justify-content: center; padding: 30px;
-        }
-        .lightbox.active { display: flex; }
-        .lightbox img { max-width: 90vw; max-height: 85vh; border-radius: 3px; }
-        .lightbox .close-lightbox {
-            position: absolute; top: 20px; right: 25px;
-            background: none; border: none; color: var(--dark-card);
-            font-size: 2.2rem; cursor: pointer; line-height: 1;
-        }
-
-        /* LEGAL */
-        .legal-modal {
-            display: none;
-            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0,0,0,0.8);
-            backdrop-filter: blur(5px);
-            z-index: 2500;
-            align-items: center; justify-content: center;
-            padding: 20px;
-        }
-        .legal-modal.active { display: flex; }
-        .legal-content {
-            background: var(--dark-card);
-            border: 1px solid rgba(201,168,76,0.3);
-            border-radius: 12px;
-            padding: 38px;
-            max-width: 760px; width: 100%;
-            max-height: 90vh;
-            overflow-y: auto;
-            position: relative;
-            box-shadow: 0 25px 80px rgba(0,0,0,0.7);
-        }
-        .legal-content h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.6rem; margin-bottom: 20px;
-            color: var(--gold);
-        }
-        .legal-tabs {
-            display: flex; gap: 8px; flex-wrap: wrap;
-            margin-bottom: 22px; border-bottom: 1px solid rgba(245,240,232,0.1);
-            padding-bottom: 14px;
-        }
-        .legal-tabs .chip { background: transparent; }
-        .legal-body { font-size: 0.88rem; line-height: 1.85; }
-        .legal-body h4 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.3rem; color: var(--gold); margin: 20px 0 8px;
-        }
-        .legal-body h4:first-child { margin-top: 0; }
-        .legal-body p { margin-bottom: 12px; opacity: 0.8; }
-        .legal-body ul { list-style: none; margin-bottom: 12px; }
-        .legal-body li { padding-left: 18px; position: relative; margin-bottom: 6px; opacity: 0.8; }
-        .legal-body li::before { content: '—'; position: absolute; left: 0; opacity: 0.4; }
-        .legal-body .updated {
-            font-size: 0.72rem; opacity: 0.45; margin-top: 20px;
-            padding-top: 14px; border-top: 1px solid rgba(245,240,232,0.08);
-        }
-
-        /* MOBILE NAV */
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: 1px solid rgba(201,168,76,0.35);
-            color: var(--gold);
-            width: 42px; height: 42px; border-radius: 3px;
-            font-size: 1.1rem; cursor: pointer; line-height: 1;
-            transition: all 0.3s;
-        }
-        .menu-toggle:hover { background: var(--gold); color: var(--dark); }
-
-        /* SHOP TOOLBAR */
-        .shop-toolbar {
-            display: flex; flex-wrap: wrap; gap: 15px;
-            justify-content: space-between; align-items: center;
-            margin-bottom: 25px;
-        }
-        .search-box { position: relative; flex: 1 1 250px; max-width: 340px; }
-        .search-box input {
-            width: 100%;
-            background: var(--dark-card);
-            border: 1px solid rgba(201,168,76,0.2);
-            border-radius: 3px;
-            padding: 13px 20px 13px 46px;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.9rem; color: var(--white);
-            outline: none;
-            transition: border-color 0.3s, box-shadow 0.3s;
-        }
-        .search-box input::placeholder { color: rgba(245,240,232,0.35); }
-        .search-box input:focus {
-            border-color: var(--gold);
-            box-shadow: 0 0 0 3px rgba(201,168,76,0.1);
-        }
-        .search-box .search-icon {
-            position: absolute; left: 18px; top: 50%;
-            transform: translateY(-50%);
-            font-size: 0.85rem; opacity: 0.5;
-            pointer-events: none;
-        }
-        .filter-chips { display: flex; flex-wrap: wrap; gap: 8px; }
-        .chip {
-            background: transparent;
-            border: 1px solid rgba(201,168,76,0.25);
-            color: rgba(245,240,232,0.7);
-            padding: 10px 20px;
-            border-radius: 3px;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.75rem; font-weight: 500;
-            letter-spacing: 1px; text-transform: uppercase;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-        .chip:hover { border-color: var(--gold); color: var(--gold); }
-        .chip.active { background: var(--gold); color: var(--dark); border-color: var(--gold); }
-        .results-count {
-            text-align: center; font-size: 0.8rem;
-            color: rgba(245,240,232,0.45); margin-bottom: 28px;
-            letter-spacing: 1px;
-        }
-        .no-results { display: none; text-align: center; padding: 60px 20px; }
-        .no-results.show { display: block; }
-        .no-results .big { font-size: 3rem; margin-bottom: 12px; }
-        .no-results p { color: rgba(245,240,232,0.5); margin-bottom: 22px; }
-        .product-card[hidden] { display: none; }
-
-        /* CART EXTRAS */
-        .cart-item { gap: 14px; }
-        .cart-item-info { flex: 1; min-width: 0; }
-        .cart-item-name { display: block; margin-bottom: 10px; line-height: 1.4; }
-        .qty-control {
-            display: inline-flex; align-items: center;
-            border: 1px solid rgba(201,168,76,0.3);
-            border-radius: 3px; overflow: hidden;
-        }
-        .qty-btn {
-            width: 28px; height: 28px;
-            background: transparent; border: none;
-            color: var(--gold); font-size: 0.95rem; font-weight: 700;
-            cursor: pointer; line-height: 1;
-            transition: background 0.2s, color 0.2s;
-        }
-        .qty-btn:hover { background: var(--gold); color: var(--dark); }
-        .qty-value {
-            min-width: 32px; text-align: center;
-            font-size: 0.85rem; font-weight: 600;
-        }
-        .cart-item-remove {
-            background: none; border: none;
-            color: var(--white); opacity: 0.3;
-            font-size: 1.2rem; line-height: 1;
-            padding: 4px; cursor: pointer;
-            transition: opacity 0.3s, color 0.3s;
-        }
-        .cart-item-remove:hover { opacity: 1; color: var(--gold); }
-        .cart-item-price { white-space: nowrap; }
-        .ship-bar { margin-bottom: 20px; }
-        .ship-msg {
-            font-size: 0.8rem; margin-bottom: 10px;
-            line-height: 1.5; color: rgba(245,240,232,0.65);
-        }
-        .ship-msg b { color: var(--gold); }
-        .ship-track { height: 4px; background: rgba(201,168,76,0.15); overflow: hidden; }
-        .ship-fill {
-            height: 100%; width: 0;
-            background: linear-gradient(135deg, var(--gold-light), var(--gold));
-            transition: width 0.5s ease;
-        }
-        .promo-box { display: flex; gap: 8px; margin-bottom: 20px; }
-        .promo-box input {
-            flex: 1;
-            background: var(--dark);
-            border: 1px solid rgba(201,168,76,0.3);
-            color: var(--white);
-            padding: 12px 16px;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.85rem;
-            letter-spacing: 2px; text-transform: uppercase;
-            border-radius: 3px; outline: none;
-            transition: border-color 0.3s;
-        }
-        .promo-box input:focus { border-color: var(--gold); }
-        .promo-box button {
-            background: transparent;
-            border: 1px solid var(--gold);
-            color: var(--gold);
-            padding: 12px 22px;
-            font-family: 'Inter', sans-serif;
-            font-weight: 600; font-size: 0.75rem;
-            letter-spacing: 1px; text-transform: uppercase;
-            cursor: pointer; border-radius: 3px;
-            transition: all 0.3s;
-        }
-        .promo-box button:hover { background: var(--gold); color: var(--dark); }
-        .cart-line {
-            display: flex; justify-content: space-between;
-            padding: 8px 0; font-size: 0.88rem;
-            color: rgba(245,240,232,0.6);
-        }
-        .cart-line.discount { color: var(--gold); }
-        .cart-line.discount span:last-child { font-weight: 600; }
-        .cart-foot {
-            display: flex; justify-content: space-between;
-            align-items: center; margin-bottom: 12px;
-        }
-        .clear-cart {
-            background: none; border: none;
-            color: var(--white); opacity: 0.4;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.78rem; text-decoration: underline;
-            cursor: pointer;
-        }
-        .clear-cart:hover { opacity: 1; color: var(--gold); }
-        .checkout-btn:disabled { background: rgba(245,240,232,0.15); color: rgba(245,240,232,0.4); cursor: not-allowed; }
-        .checkout-btn:disabled:hover { background: rgba(245,240,232,0.15); }
-
-        /* TOAST */
-        .toast-wrap {
-            position: fixed; bottom: 25px; left: 50%;
-            transform: translateX(-50%);
-            z-index: 3000; pointer-events: none;
-            display: flex; flex-direction: column;
-            gap: 10px; align-items: center;
-        }
-        .toast {
-            background: var(--gold); color: var(--dark);
-            padding: 13px 26px; border-radius: 3px;
-            font-size: 0.85rem; font-weight: 600;
-            box-shadow: 0 10px 40px rgba(201,168,76,0.3);
-            animation: toastIn 0.3s ease;
-        }
-        @keyframes toastIn {
-            from { opacity: 0; transform: translateY(15px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .toast.out { animation: toastOut 0.3s ease forwards; }
-        @keyframes toastOut { to { opacity: 0; transform: translateY(15px); } }
-
-        /* BACK TO TOP */
-        .to-top {
-            position: fixed; bottom: 25px; right: 25px;
-            width: 46px; height: 46px;
-            background: var(--gold); color: var(--dark);
-            border: none; border-radius: 3px;
-            font-size: 1.2rem; font-weight: 700; cursor: pointer;
-            box-shadow: 0 8px 30px rgba(201,168,76,0.3);
-            opacity: 0; visibility: hidden;
-            transition: all 0.3s; z-index: 900;
-        }
-        .to-top.show { opacity: 1; visibility: visible; }
-        .to-top:hover { background: var(--gold-light); transform: translateY(-3px); }
-
-        /* SCROLL REVEAL */
-        .reveal { opacity: 0; transform: translateY(28px); }
-        .reveal.visible {
-            opacity: 1; transform: translateY(0);
-            transition: opacity 0.7s ease, transform 0.7s ease;
-        }
-        @media (prefers-reduced-motion: reduce) {
-            .reveal { opacity: 1; transform: none; }
-            .reveal.visible { transition: none; }
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 768px) {
-            nav { padding: 15px 20px; }
-            .menu-toggle { display: block; }
-            .nav-links {
-                display: none;
-                position: absolute; top: 100%; left: 0; right: 0;
-                background: var(--dark-card);
-                border-bottom: 1px solid rgba(201,168,76,0.2);
-                flex-direction: column; align-items: stretch;
-                gap: 0; padding: 8px 20px 20px;
-            }
-            .nav-links.open { display: flex; }
-            .nav-links a { padding: 16px 0; border-bottom: 1px solid rgba(201,168,76,0.1); }
-            .nav-links .cart-btn { margin-top: 16px; width: 100%; }
-            .hero { padding: 100px 20px 60px; }
-            .hero h1 { font-size: 2.2rem; }
-            .countdown { gap: 15px; }
-            .countdown-num { font-size: 2rem; }
-            .products-section { padding: 60px 20px; }
-            .shop-toolbar { justify-content: center; }
-            .search-box { max-width: none; }
-            .products-grid { grid-template-columns: 1fr; }
-            .features-grid { grid-template-columns: 1fr 1fr; }
-            .footer-grid { grid-template-columns: 1fr 1fr; }
-            .newsletter-form { flex-direction: column; gap: 10px; }
-            .newsletter-form input, .newsletter-form button { border-radius: 3px; }
-            .faq { padding: 0 20px 60px; }
-            .cart-content { padding: 25px; }
-            .to-top { bottom: 15px; right: 15px; }
-        }
-    </style>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Noël Prestige","url":"https://noel-prestige.onrender.com","inLanguage":"fr-FR","publisher":{"@id":"https://noel-prestige.onrender.com/#org"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Noël Prestige","url":"https://noel-prestige.onrender.com","description":"L'art d'offrir ce qui compte","@id":"https://noel-prestige.onrender.com/#org"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Sélection 2026","numberOfItems":8,"itemListElement":[{"@type":"ListItem","position":1,"name":"Coffret Prestige Or","url":"https://noel-prestige.onrender.com/coffrets-cadeaux/coffret-or/"},{"@type":"ListItem","position":2,"name":"Montre Élégance","url":"https://noel-prestige.onrender.com/montres/montre/"},{"@type":"ListItem","position":3,"name":"Cave à vin premium","url":"https://noel-prestige.onrender.com/degustation/cave/"},{"@type":"ListItem","position":4,"name":"Sac main cuir italien","url":"https://noel-prestige.onrender.com/maroquinerie/sac/"},{"@type":"ListItem","position":5,"name":"Casque audio premium","url":"https://noel-prestige.onrender.com/high-tech/casque/"},{"@type":"ListItem","position":6,"name":"Collection bougies luxe","url":"https://noel-prestige.onrender.com/maison/bougies/"},{"@type":"ListItem","position":7,"name":"Vidéoprojecteur 4K","url":"https://noel-prestige.onrender.com/high-tech/projecteur/"},{"@type":"ListItem","position":8,"name":"Coffret chocolats belges","url":"https://noel-prestige.onrender.com/degustation/chocolats/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Comment choisir un coffret cadeau qui ne disappoint pas ?","acceptedAnswer":{"@type":"Answer","text":"Trois choses : la cohérence du contenu, la qualité de la présentation, et la taille. Un coffret qui réunit des objets complémentaires, dans un écrin soigné et de taille juste, est presque toujours un bon choix."}},{"@type":"Question","name":"Les coffrets de champagne sont-ils de bons cadeaux ?","acceptedAnswer":{"@type":"Answer","text":"Oui, à condition d'y ajouter quelque chose. Un coffret de champagne seul est un peu court ; associé à des chocolats ou à des verres, il devient un vrai cadeau de fête. Vérifiez aussi la température de stockage, qui conditionne la qualité à l'ouverture."}},{"@type":"Question","name":"Faut-il offrir un coffret ou acheter les produits séparément ?","acceptedAnswer":{"@type":"Answer","text":"Le coffret coûte généralement quinze à vingt-cinq pour cent de plus que les produits achetés séparément, mais il apporte l'emballage, la présentation et l'effet prêt à offrir. Si le destinataire est exigeant sur la présentation, le supplément en vaut la peine."}}]}</script>
 </head>
 <body>
-        <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
-<symbol id="ic-tree" viewBox="0 0 24 24"><path d="M12 2 6.5 9h2L5 14.5h2.2L4 20h16l-3.2-5.5H19L15.5 9h2z"/><rect x="10.4" y="20" width="3.2" height="2.2" rx=".6"/></symbol>
-<symbol id="ic-gift" viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="12" rx="1.4"/><path d="M3 13h18M12 9v12"/><path d="M12 9S9.6 9 8.4 7.9A2.3 2.3 0 0 1 12 5.6c.9 0 1.6.6 1.8 1.4"/><path d="M12 9s2.4 0 3.6-1.1A2.3 2.3 0 0 0 12 5.6"/></symbol>
-<symbol id="ic-star" viewBox="0 0 24 24"><path d="m12 3 2.6 5.6 6 .8-4.4 4.2 1.1 6L12 16.8 6.7 19.6l1.1-6L3.4 9.4l6-.8z"/></symbol>
-<symbol id="ic-deer" viewBox="0 0 24 24"><path d="M6 3.5 4.5 6M6 3.5 7.5 6M18 3.5 16.5 6M18 3.5 19.5 6M12 8c-3 0-4.5 2-4.5 4.5S9 17 12 17s4.5-2 4.5-4.5S15 8 12 8z"/><circle cx="10.3" cy="11" r=".8" fill="currentColor" stroke="none"/><circle cx="13.7" cy="11" r=".8" fill="currentColor" stroke="none"/><path d="M12 13.5v1"/></symbol>
-<symbol id="ic-bell" viewBox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0c0 4 1.2 5.4 1.8 6H4.2C4.8 14.4 6 13 6 9z"/><path d="M10.2 18.5a2 2 0 0 0 3.6 0"/></symbol>
-<symbol id="ic-cart" viewBox="0 0 24 24"><path d="M2.5 3.5h2.2l2.3 10.2a1.6 1.6 0 0 0 1.6 1.3h7.6a1.6 1.6 0 0 0 1.6-1.3L19.5 7H6"/><circle cx="9.5" cy="19.5" r="1.2"/><circle cx="16.5" cy="19.5" r="1.2"/></symbol>
-<symbol id="ic-teddy" viewBox="0 0 24 24"><circle cx="12" cy="15" r="6"/><circle cx="5.4" cy="7.4" r="2.6"/><circle cx="18.6" cy="7.4" r="2.6"/><circle cx="12" cy="12.6" r="2.9"/><path d="M10.4 11.2h.01M13.6 11.2h.01" stroke-width="1.8"/><path d="M12 14v1.2M12 15.2c-1 1-2.4.6-2.8-.4M12 15.2c1 1 2.4.6 2.8-.4"/></symbol>
-<symbol id="ic-gamepad" viewBox="0 0 24 24"><path d="M7.6 7.5h8.8c2.6 0 4.3 3 4.3 6.1 0 2-1.3 3.4-3 3.4-1.3 0-2.1-.8-3-2l-.7-1h-4l-.7 1c-.9 1.2-1.7 2-3 2-1.7 0-3-1.4-3-3.4 0-3.1 1.7-6.1 4.3-6.1z"/><path d="M7 10.6v2.4M5.8 11.8h2.4"/><circle cx="16.4" cy="11.4" r="1"/><circle cx="18.2" cy="13.2" r="1"/></symbol>
-<symbol id="ic-woman" viewBox="0 0 24 24"><circle cx="12" cy="5.4" r="2.9"/><path d="M12 8.6c-2.3 1.3-3.4 3.4-3.6 6l-.3 4.2M12 8.6c2.3 1.3 3.4 3.4 3.6 6l.3 4.2M8.6 12.4h6.8M9 18.8h6"/></symbol>
-<symbol id="ic-man" viewBox="0 0 24 24"><circle cx="12" cy="5.4" r="2.9"/><path d="M12 8.6c-2.2 1.2-3.3 3.2-3.6 5.8M12 8.6c2.2 1.2 3.3 3.2 3.6 5.8M8.8 12.2h6.4M9.4 18.8h5.2"/></symbol>
-<symbol id="ic-elder" viewBox="0 0 24 24"><circle cx="12" cy="5.2" r="2.8"/><path d="M12 8.4c-2.2 1.2-3.3 3.3-3.6 6M12 8.4c2.2 1.2 3.3 3.3 3.6 6M5.6 5.6 3.4 3.4M6.8 7 5.6 4.4M18.4 5.6l2.2-2.2M17.2 7l1.2-2.6"/><path d="M8.4 12h7.2M9.4 18.8h5.2"/></symbol>
-<symbol id="ic-paw" viewBox="0 0 24 24"><ellipse cx="12" cy="15.6" rx="4.6" ry="3.8"/><ellipse cx="6.4" cy="10.4" rx="2" ry="2.6"/><ellipse cx="10" cy="7.4" rx="1.9" ry="2.6"/><ellipse cx="14.2" cy="7.4" rx="1.9" ry="2.6"/><ellipse cx="17.6" cy="10.4" rx="2" ry="2.6"/></symbol>
-<symbol id="ic-sparkle" viewBox="0 0 24 24"><path d="M12 3.2 13.7 9l5.8 1.7-5.8 1.7L12 18.2 10.3 12.4 4.5 10.7 10.3 9z"/><path d="M18.6 16.4 19.3 18.6 21.5 19.3 19.3 20 18.6 22.2 17.9 20 15.7 19.3 17.9 18.6z"/></symbol>
-<symbol id="ic-truck" viewBox="0 0 24 24"><path d="M2.5 6.2h10.2v10H2.5z"/><path d="M12.7 9.4h4l3 3.1v3.7h-7z"/><circle cx="7" cy="18.2" r="1.8"/><circle cx="16.6" cy="18.2" r="1.8"/></symbol>
-<symbol id="ic-lock" viewBox="0 0 24 24"><rect x="4.4" y="10.4" width="15.2" height="10.2" rx="1.6"/><path d="M8 10.4V7.6a4 4 0 0 1 8 0v2.8"/><path d="M12 14.2v2.4"/></symbol>
-<symbol id="ic-returnArrow" viewBox="0 0 24 24"><path d="M3.6 9.4h11.2a5.4 5.4 0 0 1 0 10.8H9"/><path d="M7.2 5.2 3.2 9.4l4 4.2"/></symbol>
-<symbol id="ic-wallet" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="1.8"/><path d="M3 9.6h18"/><circle cx="16.8" cy="14" r="1.5"/><path d="M6.4 6V4.8a1.4 1.4 0 0 1 1.4-1.4h8.4"/></symbol>
-<symbol id="ic-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.4"/><path d="m15.6 15.6 4.4 4.4"/></symbol>
-<symbol id="ic-heart" viewBox="0 0 24 24"><path d="M12 20.2S3.6 15.2 3.6 9.4A4.4 4.4 0 0 1 12 7.2a4.4 4.4 0 0 1 8.4 2.2c0 5.8-8.4 10.8-8.4 10.8z"/></symbol>
-<symbol id="ic-pen" viewBox="0 0 24 24"><path d="M15.4 3.9 20 8.5 8.8 19.7l-5.2 1.3 1.3-5.2z"/><path d="m13.6 5.7 4.6 4.6"/></symbol>
-<symbol id="ic-camera" viewBox="0 0 24 24"><path d="M3 8.4h3.4l1.5-2.4h8.2l1.5 2.4H21v10.2H3z"/><circle cx="12" cy="13.2" r="3.4"/></symbol>
-<symbol id="ic-bag" viewBox="0 0 24 24"><path d="M4.6 8h14.8l1.1 12.4H3.5z"/><path d="M8.6 8V5.6a3.4 3.4 0 0 1 6.8 0V8"/></symbol>
-<symbol id="ic-wine" viewBox="0 0 24 24"><path d="M7.6 3.4h8.8l-.6 5.2a3.8 3.8 0 0 1-3.8 3.4 3.8 3.8 0 0 1-3.8-3.4z"/><path d="M12 12v8.6M8.6 20.6h6.8"/></symbol>
-<symbol id="ic-candle" viewBox="0 0 24 24"><rect x="9" y="9" width="6" height="11.4" rx="1"/><path d="M12 9V6.4M10.4 4.4a1.6 1.6 0 0 1 1.6 1.6 1.6 1.6 0 0 1-1.6 1.6"/></symbol>
-<symbol id="ic-headphones" viewBox="0 0 24 24"><path d="M4 15v-2.8a8 8 0 0 1 16 0V15"/><rect x="2.6" y="13.4" width="4.4" height="7" rx="2"/><rect x="17" y="13.4" width="4.4" height="7" rx="2"/></symbol>
-<symbol id="ic-watch" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5.4"/><path d="M8.8 6.9 9.6 3h4.8l.8 3.9M8.8 17.1l.8 3.9h4.8l.8-3.9M12 9.4V12l1.8 1.2"/></symbol>
-<symbol id="ic-box" viewBox="0 0 24 24"><path d="m12 3 8 4.2v9.6L12 21l-8-4.2V7.2z"/><path d="m4 7.2 8 4.2 8-4.2M12 11.4V21"/></symbol>
-<symbol id="ic-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.4"/></symbol>
-        </defs></svg>
+<a class="skip-link" href="#main">Aller au contenu</a>
 
-    <!-- NAV -->
-    <nav>
-        <div class="logo"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2 13.7 9l5.8 1.7-5.8 1.7L12 18.2 10.3 12.4 4.5 10.7 10.3 9z"/><path d="M18.6 16.4 19.3 18.6 21.5 19.3 19.3 20 18.6 22.2 17.9 20 15.7 19.3 17.9 18.6z"/></svg> NOËL PRESTIGE</div>
-        <div class="nav-links" id="nav-links">
-            <a href="#collection" onclick="closeMenu()">Collection</a>
-            <a href="#avis" onclick="closeMenu()">Avis</a>
-            <a href="#livraison" onclick="closeMenu()">Livraison</a>
-            <button class="cart-btn" onclick="openCart()">Panier (<span id="cart-count">0</span>)</button>
-        </div>
-        <button class="menu-toggle" id="menu-toggle" onclick="toggleMenu()" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-    </nav>
+<header class="header">
+  <div class="wrap header__in">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">N</span>
+      <span>
+        <span class="brand__name">Noël Prestige</span>
+        <span class="brand__year">NOËL 2026</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Ouvrir le menu">
+      <span class="icon-open"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span>
+      <span class="icon-close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></span>
+    </button>
+    <nav class="nav" aria-label="Navigation principale"><a href="coffrets-cadeaux/index.html">Coffrets</a><a href="montres/index.html">Montres</a><a href="maroquinerie/index.html">Maroquinerie</a><a href="degustation/index.html">Dégustation</a><a href="maison/index.html">Maison</a><a href="high-tech/index.html">High-tech</a></nav>
+  </div>
+</header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-badge">Édition Limitée 2026</div>
-            <h1>Offrez l'Extraordinaire<br>Cette Saison</h1>
-            <p>Une sélection exclusive de cadeaux d'exception, choisis avec soin pour marquer les esprits. Chaque pièce raconte une histoire, chaque détail compte.</p>
-            <a href="#collection" class="hero-cta">Découvrir la Collection</a>
-            <div class="hero-proof">
-                    <div><b>2 540+</b><span>clients gagnants</span></div>
-                    <div><b>4,9/5</b><span>note moyenne</span></div>
-                    <div><b>24-48h</b><span>livraison Bénin</span></div>
-                    <div><b>15 j</b><span>retour facile</span></div>
-                </div>
-        </div>
-    </section>
 
-    <!-- COUNTDOWN -->
-    <section class="countdown-section">
-        <div class="countdown-label">Livraison garantie avant Noël — Commandez dans</div>
-        <div class="countdown">
-            <div class="countdown-item">
-                <div class="countdown-num" id="cd-days">--</div>
-                <div class="countdown-text">Jours</div>
-            </div>
-            <div class="countdown-item">
-                <div class="countdown-num" id="cd-hours">--</div>
-                <div class="countdown-text">Heures</div>
-            </div>
-            <div class="countdown-item">
-                <div class="countdown-num" id="cd-mins">--</div>
-                <div class="countdown-text">Minutes</div>
-            </div>
-            <div class="countdown-item">
-                <div class="countdown-num" id="cd-secs">--</div>
-                <div class="countdown-text">Secondes</div>
-            </div>
-        </div>
-    </section>
 
-    <!-- REASSURANCE BAR -->
-    <section class="reassure">
-        <div class="reassure-item">
-            <span class="ri"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.2h10.2v10H2.5z"/><path d="M12.7 9.4h4l3 3.1v3.7h-7z"/><circle cx="7" cy="18.2" r="1.8"/><circle cx="16.6" cy="18.2" r="1.8"/></svg></span>
-            <div><b>Livraison 24-48h</b><p>Partout au Bénin et sous-région. Offerte dès 50 000 FCFA.</p></div>
-        </div>
-        <div class="reassure-item">
-            <span class="ri"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.4" y="10.4" width="15.2" height="10.2" rx="1.6"/><path d="M8 10.4V7.6a4 4 0 0 1 8 0v2.8"/><path d="M12 14.2v2.4"/></svg></span>
-            <div><b>Paiement Mobile Money</b><p>MTN MoMo, Moov Money ou carte. 100% sécurisé.</p></div>
-        </div>
-        <div class="reassure-item">
-            <span class="ri"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="1.4"/><path d="M3 13h18M12 9v12"/><path d="M12 9S9.6 9 8.4 7.9A2.3 2.3 0 0 1 12 5.6c.9 0 1.6.6 1.8 1.4"/><path d="M12 9s2.4 0 3.6-1.1A2.3 2.3 0 0 0 12 5.6"/></svg></span>
-            <div><b>Emballage premium offert</b><p>Carte de vœux personnalisée incluse.</p></div>
-        </div>
-        <div class="reassure-item">
-            <span class="ri"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.6 9.4h11.2a5.4 5.4 0 0 1 0 10.8H9"/><path d="M7.2 5.2 3.2 9.4l4 4.2"/></svg></span>
-            <div><b>30 jours pour changer d'avis</b><p>Sans questions, remboursement sous 7 jours.</p></div>
-        </div>
-    </section>
+<main id="main">
 
-    <!-- PRODUCTS -->
-    <section class="products-section" id="collection">
-        <div class="section-header">
-            <h2>Notre Collection</h2>
-            <p>Des cadeaux d'exception pour des moments inoubliables</p>
+  <section class="hero">
+    <div class="wrap hero__in">
+      <div>
+        <p class="eyebrow">Sélection 2026</p>
+        <h1>L&#39;art d&#39;offrir ce qui &lt;em&gt;compte&lt;/em&gt;</h1>
+        <p class="lede">Des cadeaux d&#39;exception, choisis un par un. Pas de catalogue infini : huit pièces longuement regardées, dont on peut dire précisément ce qu&#39;elles ont de plus que les autres, et à qui elles conviennent.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#categories">Voir la sélection <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn--ghost" href="guide/index.html">Guide d&#39;achat</a>
         </div>
-        <div class="shop-toolbar">
-            <div class="search-box">
-                <span class="search-icon"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.4"/><path d="m15.6 15.6 4.4 4.4"/></svg></span>
-                <input type="search" id="search-input" placeholder="Rechercher dans la collection..." aria-label="Rechercher un cadeau">
-            </div>
-            <div class="budget-box">
-                <select id="budget-select" aria-label="Filtrer par budget">
-                    <option value="0" selected>Tous les budgets</option>
-                    <option value="100000">Moins de 100 000 FCFA</option>
-                    <option value="200000">Moins de 200 000 FCFA</option>
-                    <option value="300000">Moins de 300 000 FCFA</option>
-                    <option value="500000">Moins de 500 000 FCFA</option>
-                </select>
-            </div>
-            <div class="filter-chips" id="filter-chips">
-                <button class="chip active" data-filter="all">Tout</button>
-                <button class="chip" data-filter="promo">Promos</button>
-                <button class="chip" data-filter="bestseller">Bestsellers</button>
-                <button class="chip" data-filter="wish">Favoris (<span id="wish-count">0</span>)</button>
-                <button class="chip" data-sort="price-asc">Prix croissant</button>
-                <button class="chip" data-sort="price-desc">Prix décroissant</button>
-            </div>
+        <div class="hero__stats">
+          <div class="hero__stat"><strong>8</strong><span>produits retenus</span></div>
+          <div class="hero__stat"><strong>6</strong><span>univers de cadeau</span></div>
+          <div class="hero__stat"><strong>2026</strong><span>édition en cours</span></div>
         </div>
-
-        <p class="results-count" id="results-count"></p>
-
-        <div class="products-grid" id="products-grid">
-            <!-- cartes rendues par JS depuis CATALOG (renderCatalog) -->
+      </div>
+      <div>
+        <div class="grid" style="grid-template-columns:1fr 1fr">
+          
+      <article class="card reveal">
+        <div class="card__media"><img src="img/coffret-or.jpg" alt="Coffret Prestige Or" loading="lazy" decoding="async" width="400" height="300"></div>
+        <div class="card__body">
+          <h3 class="card__title"><a href="coffrets-cadeaux/index.html">Coffrets cadeaux</a></h3>
+          <p class="card__text">Un écrin, un champagne, des chocolats : le cadeau se donne tel quel, sans songer à l&#39;emballer.</p>
+          <span class="card__link">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
-
-        <div class="no-results" id="no-results">
-            <div class="big"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.4"/><path d="m15.6 15.6 4.4 4.4"/></svg></div>
-            <p>Aucune pièce ne correspond à votre recherche.</p>
-            <button class="chip" onclick="resetFilters()">Réinitialiser les filtres</button>
+      </article>
+      <article class="card reveal">
+        <div class="card__media"></div>
+        <div class="card__body">
+          <h3 class="card__title"><a href="montres/index.html">Montres</a></h3>
+          <p class="card__text">L&#39;objet que l&#39;on garde. Des montres qui se portent au quotidien plutôt que de prendre la poussière dans leur écrin.</p>
+          <span class="card__link">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
-    </section>
-
-    <!-- GIFT FINDER -->
-    <section class="finder" id="finder">
-        <div class="section-header">
-            <h2>Offrir sans hésiter</h2>
-            <p>Sélectionnez le destinataire et votre budget, nous nous occupons du reste</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__media"><img src="img/sac.jpg" alt="Sac main cuir italien" loading="lazy" decoding="async" width="400" height="300"></div>
+        <div class="card__body">
+          <h3 class="card__title"><a href="maroquinerie/index.html">Maroquinerie</a></h3>
+          <p class="card__text">Cuir pleine fleur tanné végétal : une pièce qui se patine au fil des années au lieu de s&#39;user.</p>
+          <span class="card__link">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
-        <div class="finder-box">
-            <div class="finder-field">
-                <label for="finder-who">C'est pour...</label>
-                <select id="finder-who">
-                    <option value="coffrets"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="1.4"/><path d="M3 13h18M12 9v12"/><path d="M12 9S9.6 9 8.4 7.9A2.3 2.3 0 0 1 12 5.6c.9 0 1.6.6 1.8 1.4"/><path d="M12 9s2.4 0 3.6-1.1A2.3 2.3 0 0 0 12 5.6"/></svg> Un proche exigeant</option>
-                    <option value="montres"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5.4"/><path d="M8.8 6.9 9.6 3h4.8l.8 3.9M8.8 17.1l.8 3.9h4.8l.8-3.9M12 9.4V12l1.8 1.2"/></svg> Un homme</option>
-                    <option value="maroquinerie"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.6 8h14.8l1.1 12.4H3.5z"/><path d="M8.6 8V5.6a3.4 3.4 0 0 1 6.8 0V8"/></svg> Une femme</option>
-                    <option value="degustation"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.6 3.4h8.8l-.6 5.2a3.8 3.8 0 0 1-3.8 3.4 3.8 3.8 0 0 1-3.8-3.4z"/><path d="M12 12v8.6M8.6 20.6h6.8"/></svg> Un amateur de dégustation</option>
-                    <option value="maison"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="6" height="11.4" rx="1"/><path d="M12 9V6.4M10.4 4.4a1.6 1.6 0 0 1 1.6 1.6 1.6 1.6 0 0 1-1.6 1.6"/></svg> La maison</option>
-                    <option value="tech"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-2.8a8 8 0 0 1 16 0V15"/><rect x="2.6" y="13.4" width="4.4" height="7" rx="2"/><rect x="17" y="13.4" width="4.4" height="7" rx="2"/></svg> Un fan de technologie</option>
-                </select>
-            </div>
-            <div class="finder-field">
-                <label for="finder-budget">Budget maximum</label>
-                <select id="finder-budget">
-                    <option value="100000">Jusqu'à 100 000 FCFA</option>
-                    <option value="200000" selected>Jusqu'à 200 000 FCFA</option>
-                    <option value="300000">Jusqu'à 300 000 FCFA</option>
-                    <option value="400000">Jusqu'à 400 000 FCFA</option>
-                    <option value="0">Pas de limite</option>
-                </select>
-            </div>
-            <button class="finder-btn" onclick="runFinder()">Trouver un cadeau</button>
+      </article>
+      <article class="card reveal">
+        <div class="card__media"><img src="img/cave.jpg" alt="Cave à vin premium" loading="lazy" decoding="async" width="400" height="300"></div>
+        <div class="card__body">
+          <h3 class="card__title"><a href="degustation/index.html">Dégustation</a></h3>
+          <p class="card__text">Trois grands crus, des verres en cristal, et de quoi faire enfin la différence entre un vin et un autre.</p>
+          <span class="card__link">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
-        <p class="finder-result" id="finder-result" aria-live="polite"></p>
-    </section>
-
-    <!-- FEATURES -->
-    <section class="features" id="livraison">
-        <div class="features-grid">
-            <div class="feature">
-                <div class="feature-icon"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.2h10.2v10H2.5z"/><path d="M12.7 9.4h4l3 3.1v3.7h-7z"/><circle cx="7" cy="18.2" r="1.8"/><circle cx="16.6" cy="18.2" r="1.8"/></svg></div>
-                <h4>Livraison Express</h4>
-                <p>Livraison gratuite pour toute commande supérieure à 50 000 FCFA</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.4" y="10.4" width="15.2" height="10.2" rx="1.6"/><path d="M8 10.4V7.6a4 4 0 0 1 8 0v2.8"/><path d="M12 14.2v2.4"/></svg></div>
-                <h4>Paiement Sécurisé</h4>
-                <p>Transactions 100% sécurisées, Mobile Money et carte bancaire</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.6 9.4h11.2a5.4 5.4 0 0 1 0 10.8H9"/><path d="M7.2 5.2 3.2 9.4l4 4.2"/></svg></div>
-                <h4>Retour Gratuit</h4>
-                <p>30 jours pour changer d'avis, sans questions</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="1.4"/><path d="M3 13h18M12 9v12"/><path d="M12 9S9.6 9 8.4 7.9A2.3 2.3 0 0 1 12 5.6c.9 0 1.6.6 1.8 1.4"/><path d="M12 9s2.4 0 3.6-1.1A2.3 2.3 0 0 0 12 5.6"/></svg></div>
-                <h4>Emballage Cadeau</h4>
-                <p>Emballage premium offert pour chaque commande</p>
-            </div>
+      </article>
         </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="testimonials" id="avis">
-        <div class="section-header">
-            <h2>Ce Que Disent Nos Clients</h2>
-            <p>Plus de 2 500 clients satisfaits cette saison</p>
-        </div>
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <div class="testimonial-stars">★★★★★</div>
-                <p class="testimonial-text">"Le coffret Prestige a été un cadeau parfait pour mon père. La qualité est exceptionnelle et l'emballage magnifique. Je recommande vivement !"</p>
-                <div class="testimonial-author">— Aïcha B., Cotonou</div>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-stars">★★★★★</div>
-                <p class="testimonial-text">"Commande reçue en 24h, produit conforme à la description. Le service client est très réactif. Noël Prestige est devenu ma boutique de référence."</p>
-                <div class="testimonial-author">— Kwame A., Lomé</div>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-stars">★★★★★</div>
-                <p class="testimonial-text">"La montre Élégance est superbe. Mon mari était ravi. Livraison rapide et soignée. Merci pour cette belle expérience d'achat."</p>
-                <div class="testimonial-author">— Fatou D., Abidjan</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq" id="faq">
-        <div class="section-header">
-            <h2>Questions Fréquentes</h2>
-            <p>L'essentiel avant de choisir votre cadeau</p>
-        </div>
-
-        <div class="faq-item">
-            <button class="faq-q">Quelle est la date limite de commande ?</button>
-            <div class="faq-a"><p>Pour garantir une livraison avant le 24 décembre, nous prolongeons la validation des commandes jusqu'au 20 décembre à 18h (heure de Cotonou). Passé ce délai, la livraison express n'est plus garantie.</p></div>
-        </div>
-        <div class="faq-item" id="livraison-detail">
-            <button class="faq-q">Comment se passe la livraison ?</button>
-            <div class="faq-a"><p>Livraison offerte dès 50 000 FCFA d'achat, sinon 7 000 FCFA. Expédition sous 24h et suivi par SMS. Cotonou et Porto-Novo en 24h, Lomé et Abidjan en 48h.</p></div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-q">Mon paiement est-il sécurisé ?</button>
-            <div class="faq-a"><p>Toutes les transactions passent par un canal chiffré. Nous acceptons Mobile Money, carte bancaire et paiement à la livraison. Aucune donnée bancaire n'est stockée de notre côté.</p></div>
-        </div>
-        <div class="faq-item" id="retours">
-            <button class="faq-q">Quelle est la politique de retour ?</button>
-            <div class="faq-a"><p>Vous disposez de 30 jours après réception pour changer d'avis, pièces non ouvertes et dans leur emballage d'origine. Le retour est gratuit et remboursement sous 5 à 7 jours ouvrés.</p></div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-q">Comment fonctionne le code NOEL15 ?</button>
-            <div class="faq-a"><p>Saisissez NOEL15 dans le champ « Code promo » de votre panier : 15% sont appliqués immédiatement sur le total. Le code est cumulable avec la livraison offerte et valable sur toute la collection.</p></div>
-        </div>
-    </section>
-
-    <!-- NEWSLETTER -->
-    <section class="newsletter">
-        <h2>-15% Sur Votre Première Commande</h2>
-        <p>Inscrivez-vous et recevez votre code promo exclusif</p>
-        <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
-            <input type="email" placeholder="Votre adresse e-mail" required>
-            <button type="submit">S'inscrire</button>
-        </form>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <span class="logo"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2 13.7 9l5.8 1.7-5.8 1.7L12 18.2 10.3 12.4 4.5 10.7 10.3 9z"/><path d="M18.6 16.4 19.3 18.6 21.5 19.3 19.3 20 18.6 22.2 17.9 20 15.7 19.3 17.9 18.6z"/></svg> NOËL PRESTIGE</span>
-                <p>Votre destination pour des cadeaux d'exception. Nous sélectionnons avec soin les plus beaux produits pour rendre vos fêtes inoubliables.</p>
-            </div>
-            <div>
-                <h5>Boutique</h5>
-                <ul>
-                    <li><a href="#collection" onclick="return false;">Tous les Cadeaux</a></li>
-                    <li><a href="#collection" onclick="setFilter('promo'); return false;">Coffrets</a></li>
-                    <li><a href="#collection" onclick="setFilter('bestseller'); return false;">Nouveautés</a></li>
-                    <li><a href="#collection" onclick="setFilter('promo'); return false;">Promotions</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5>Aide</h5>
-                <ul>
-                    <li><a href="#livraison-detail" onclick="return false;">Livraison</a></li>
-                    <li><a href="#retours" onclick="return false;">Retours</a></li>
-                    <li><a href="#faq" onclick="return false;">FAQ</a></li>
-                    <li><a href="javascript:openLegal('contact')">Contact</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5>Légal</h5>
-                <ul>
-                    <li><a href="javascript:openLegal('mentions')">Mentions légales</a></li>
-                    <li><a href="javascript:openLegal('cgv')">CGV</a></li>
-                    <li><a href="javascript:openLegal('privacy')">Confidentialité</a></li>
-                    <li><a href="javascript:openLegal('cookies')">Cookies</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5>Contact</h5>
-                <ul>
-                    <li><a href="tel:+22996123456">+229 96 12 34 56</a></li>
-                    <li><a href="mailto:contact@noelprestige.com">contact@noelprestige.com</a></li>
-                    <li><a href="#collection" onclick="return false;">Cotonou, Bénin</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            © 2026 Noël Prestige. Tous droits réservés. Conçu avec <svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.2S3.6 15.2 3.6 9.4A4.4 4.4 0 0 1 12 7.2a4.4 4.4 0 0 1 8.4 2.2c0 5.8-8.4 10.8-8.4 10.8z"/></svg> pour des fêtes inoubliables.
-        </div>
-    </footer>
-
-    <!-- CART MODAL -->
-    <div class="cart-modal" id="cart-modal" role="dialog" aria-modal="true" aria-labelledby="cart-title" onclick="if(event.target===this) closeCart()">
-        <div class="cart-content">
-            <button class="close-cart" onclick="closeCart()" aria-label="Fermer le panier">&times;</button>
-            <h3 id="cart-title">Votre Panier</h3>
-
-            <div class="ship-bar" id="ship-bar">
-                <p class="ship-msg" id="ship-msg"></p>
-                <div class="ship-track"><div class="ship-fill" id="ship-fill"></div></div>
-            </div>
-
-            <div id="cart-items"></div>
-
-            <div class="promo-box" id="promo-box">
-                <input type="text" id="promo-input" placeholder="Code promo" aria-label="Code promo">
-                <button onclick="applyPromo()">Appliquer</button>
-            </div>
-
-            <div id="cart-summary"></div>
-
-            <div class="cart-total">
-                <span>Total</span>
-                <span id="cart-total-price">0 FCFA</span>
-            </div>
-
-            <div class="cart-foot">
-                <button class="clear-cart" onclick="clearCart()">Vider le panier</button>
-                <span style="font-size:0.75rem;opacity:0.4;letter-spacing:1px;">Emballage premium offert</span>
-            </div>
-
-            <button class="checkout-btn" id="checkout-btn" onclick="checkout()">Passer la Commande</button>
-        </div>
+      </div>
     </div>
-
-    <!-- PRODUCT DETAIL MODAL -->
-    <div class="detail-modal" id="detail-modal" role="dialog" aria-modal="true" aria-labelledby="detail-name" onclick="if(event.target===this) closeDetail()">
-        <div class="detail-content">
-            <div class="detail-art" id="detail-art"></div>
-            <div class="detail-body">
-                <button class="close-cart" onclick="closeDetail()" aria-label="Fermer la fiche produit">&times;</button>
-                <div id="detail-head"></div>
-                <div class="detail-actions" id="detail-actions"></div>
-                <div class="bundle" id="detail-bundle"></div>
-                <div class="reviews" id="detail-reviews"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- PHOTO LIGHTBOX -->
-    <div class="lightbox" id="lightbox" onclick="closeLightbox()" role="dialog" aria-modal="true" aria-label="Agrandissement de la photo">
-        <button class="close-lightbox" aria-label="Fermer">&times;</button>
-        <img id="lightbox-img" src="" alt="Photo de l'avis">
-    </div>
-
-    <!-- LEGAL MODAL -->
-    <div class="legal-modal" id="legal-modal" role="dialog" aria-modal="true" aria-labelledby="legal-title" onclick="if(event.target===this) closeLegal()">
-        <div class="legal-content">
-            <button class="close-cart" onclick="closeLegal()" aria-label="Fermer">&times;</button>
-            <h3 id="legal-title">Informations légales</h3>
-            <div class="legal-tabs" id="legal-tabs"></div>
-            <div class="legal-body" id="legal-body"></div>
-        </div>
-    </div>
-
-    <!-- CHECKOUT MODAL -->
-    <div class="checkout-modal" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title" onclick="if(event.target===this) closeCheckout()">
-        <div class="checkout-content">
-            <button class="close-cart" onclick="closeCheckout()" aria-label="Fermer">&times;</button>
-
-            <div id="checkout-form-view">
-                <h3 id="checkout-title">Passer la commande</h3>
-                <div class="order-recap" id="order-recap"></div>
-
-                <form id="checkout-form" novalidate onsubmit="return submitOrder(event)">
-                    <div class="field">
-                        <label for="c-name">Nom complet *</label>
-                        <input id="c-name" name="name" required minlength="3" autocomplete="name" placeholder="Ex : Aïcha BENISSOU">
-                    </div>
-                    <div class="field-row">
-                        <div class="field">
-                            <label for="c-phone">Téléphone *</label>
-                            <input id="c-phone" name="phone" type="tel" required autocomplete="tel" placeholder="+229 96 12 34 56" pattern="[0-9+().\s-]{8,20}">
-                        </div>
-                        <div class="field">
-                            <label for="c-city">Ville *</label>
-                            <select id="c-city" name="city" required>
-                                <option value="">Choisir...</option>
-                                <option>Cotonou</option>
-                                <option>Porto-Novo</option>
-                                <option>Parakou</option>
-                                <option>Abomey-Calavi</option>
-                                <option>Lomé (Togo)</option>
-                                <option>Abidjan (Côte d'Ivoire)</option>
-                                <option>Autre</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label for="c-address">Adresse de livraison</label>
-                        <textarea id="c-address" name="address" rows="2" placeholder="Quartier, hôtel, point de repère"></textarea>
-                    </div>
-                    <fieldset class="field">
-                        <legend>Moyen de paiement *</legend>
-                        <div class="pay-options">
-                            <label class="pay-opt"><input type="radio" name="pay" value="MTN Mobile Money" required><span>MTN MoMo</span></label>
-                            <label class="pay-opt"><input type="radio" name="pay" value="Moov Money"><span>Moov Money</span></label>
-                            <label class="pay-opt"><input type="radio" name="pay" value="Carte bancaire"><span>Carte</span></label>
-                            <label class="pay-opt"><input type="radio" name="pay" value="Espèces"><span>À la livraison</span></label>
-                        </div>
-                    </fieldset>
-                    <div class="field">
-                        <label for="c-note">Message de la carte de vœux</label>
-                        <input id="c-note" name="note" maxlength="120" placeholder="Joyeuses fêtes !">
-                    </div>
-                    <button class="checkout-btn" type="submit">Valider la commande</button>
-                </form>
-            </div>
-
-            <div id="checkout-done" class="order-done" style="display:none">
-                <div class="tick">&#10003;</div>
-                <h4>Commande confirmée</h4>
-                <p id="done-msg"></p>
-                <div class="order-ref" id="done-ref"></div>
-                <p style="opacity:0.6;font-size:0.85rem;">Un conseiller vous contacte sous 2h pour confirmer le paiement et la livraison.</p>
-                <button class="finder-btn" style="margin-top:10px;" onclick="closeCheckout()">Continuer mes achats</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- ADDED TO CART PANEL (conversion) -->
-    <aside class="added-panel" id="added-panel" aria-live="polite">
-        <div class="added-head">
-            <span class="tick">&#10003;</span>
-            <div><b id="added-title">Ajouté au panier</b><span id="added-sub">Livraison offerte dès 50 000 FCFA</span></div>
-        </div>
-        <div class="added-items" id="added-items"></div>
-        <div class="added-perks" id="added-perks"></div>
-        <div class="added-cta">
-            <button onclick="hideAdded()">Continuer mes achats</button>
-            <button class="solid" onclick="hideAdded();openCart()">Voir mon panier</button>
-        </div>
-    </aside>
-
-    <!-- TOAST -->
-    <div class="toast-wrap" id="toast-wrap" aria-live="polite"></div>
-
-    <!-- BACK TO TOP -->
-    <button class="to-top" id="to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Retour en haut">&uarr;</button>
-
-    <script>
-        const FREE_SHIPPING = 50000;
-        const SHIPPING_FEE = 7000;
-        const STORAGE_KEY = 'noel-prestige-cart';
-        const WISH_KEY = 'noel-prestige-wishlist';
-        const REVIEWS_KEY = 'noel-prestige-reviews';
-        const ORDERS_KEY = 'noel-prestige-orders';
-        const NEWSLETTER_KEY = 'noel-prestige-newsletter';
-        const ORDERS_ENDPOINT = '/api/orders';
-        const PROMO_CODES = { 'NOEL15': 15, 'PRESTIGE10': 10 };
-
-        /* ---------- UTILS ---------- */
-        const fmt = n => n.toLocaleString('fr-FR') + ' FCFA';
-        const $ = id => document.getElementById(id);
-
-        /* Rend une icone SVG depuis le sprite inline. */
-        function ic(name, cls) {
-            const sym = document.querySelector('#ic-' + name);
-            if (!sym) return '';
-            return '<svg class="ic ' + (cls || '') + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" ' +
-                'stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
-                sym.innerHTML + '</svg>';
-        }
-        const esc = s => String(s).replace(/[&<>"']/g, c => ({
-            '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
-        }[c]));
-        const slug = s => String(s).toLowerCase().normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, '')
-            .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-        const norm = s => String(s).toLowerCase().normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, '');
-
-        function starRow(rating, extraClass) {
-            const full = Math.round(rating);
-            let out = '';
-            for (let i = 1; i <= 5; i++) {
-                out += '<span class="' + (i <= full ? '' : 'off') + '">★</span>';
-            }
-            return '<span class="stars ' + (extraClass || '') + '" role="img" aria-label="' + full + ' sur 5">' + out + '</span>';
-        }
-
-        function timeAgo(ts) {
-            const diff = Date.now() - ts;
-            const day = 86400000;
-            if (diff < 3600000) return "à l'instant";
-            if (diff < day) return 'il y a ' + Math.floor(diff / 3600000) + ' h';
-            if (diff < 7 * day) return 'il y a ' + Math.floor(diff / day) + ' j';
-            if (diff < 30 * day) return 'il y a ' + Math.floor(diff / (7 * day)) + ' sem.';
-            return new Date(ts).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
-        }
-
-        /* ---------- ART: illustrations vectorielles (100x100) ---------- */
-        const ART = {
-            giftbox: `<svg viewBox="0 0 100 100" class="art" role="img" aria-hidden="true"><ellipse cx="50" cy="86" rx="32" ry="6" fill="#000" opacity=".35"/><rect x="16" y="38" width="68" height="46" rx="3" fill="#1a1a1a" stroke="#c9a84c" stroke-width="2"/><rect x="12" y="28" width="76" height="14" rx="3" fill="#262626" stroke="#c9a84c" stroke-width="2"/><rect x="44" y="28" width="12" height="56" fill="#c9a84c"/><path d="M50 28c-14 0-18-6-14-11 3-4 10-1 14 11z" fill="none" stroke="#c9a84c" stroke-width="2.5"/><path d="M50 28c14 0 18-6 14-11-3-4-10-1-14 11z" fill="none" stroke="#c9a84c" stroke-width="2.5"/><circle cx="50" cy="60" r="5" fill="#e8c14a"/><path d="M22 50h8M70 50h8" stroke="#c9a84c" stroke-width="1.5" opacity=".5"/></svg>`,
-            luxwatch: `<svg viewBox="0 0 100 100" class="art" role="img" aria-hidden="true"><ellipse cx="50" cy="88" rx="20" ry="4" fill="#000" opacity=".4"/><rect x="39" y="6" width="22" height="28" rx="2" fill="#3a3a3a" stroke="#c9a84c" stroke-width="1"/><rect x="39" y="66" width="22" height="28" rx="2" fill="#3a3a3a" stroke="#c9a84c" stroke-width="1"/><circle cx="50" cy="50" r="23" fill="#c9a84c"/><circle cx="50" cy="50" r="18" fill="#0f0f0f"/><path d="M50 39v11l7 4" stroke="#c9a84c" stroke-width="2.2" fill="none" stroke-linecap="round"/><circle cx="50" cy="50" r="1.8" fill="#e8c14a"/><path d="M50 32v3M50 65v3M32 50h3M65 50h3" stroke="#c9a84c" stroke-width="1.4" stroke-linecap="round"/></svg>`,
-            wine: `<svg viewBox="0 0 100 100" class="art" role="img" aria-hidden="true"><ellipse cx="50" cy="88" rx="30" ry="5" fill="#000" opacity=".35"/><rect x="14" y="52" width="12" height="34" rx="2" fill="#1a2b1a" stroke="#c9a84c" stroke-width="1.5"/><rect x="16" y="42" width="8" height="11" fill="#c9a84c" opacity=".8"/><rect x="30" y="46" width="12" height="40" rx="2" fill="#2b1a1a" stroke="#c9a84c" stroke-width="1.5"/><rect x="32" y="36" width="8" height="11" fill="#c9a84c" opacity=".8"/><path d="M62 26h16l-3 12c-1 4-3 6-5 8v30c0 3-2 4-4 4s-4-1-4-4V46c-2-2-4-4-5-8z" fill="#1a2b1a" stroke="#c9a84c" stroke-width="1.8"/><path d="M62 34h16" stroke="#c9a84c" stroke-width="1.2" opacity=".7"/><path d="M60 26h20l-1 5H61z" fill="#c9a84c" opacity=".85"/><path d="M52 74h34" stroke="#c9a84c" stroke-width="2" opacity=".4"/></svg>`,
-            handbag: `<svg viewBox="0 0 100 100" class="art" role="img" aria-hidden="true"><ellipse cx="50" cy="88" rx="28" ry="5" fill="#000" opacity=".35"/><path d="M32 40V32a18 18 0 0 1 36 0v8" fill="none" stroke="#c9a84c" stroke-width="2.5"/><path d="M20 40h60l4 44a4 4 0 0 1-4 4H20a4 4 0 0 1-4-4z" fill="#1a1a1a" stroke="#c9a84c" stroke-width="2"/><path d="M24 50h52" stroke="#c9a84c" stroke-width="1" opacity=".4"/><rect x="42" y="56" width="16" height="12" rx="2" fill="none" stroke="#c9a84c" stroke-width="2"/><circle cx="50" cy="62" r="2.5" fill="#e8c14a"/><path d="M16 44l-6 6M84 44l6 6" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/></svg>`,
-            hp: `<svg viewBox="0 0 100 100" class="art" role="img" aria-hidden="true"><ellipse cx="50" cy="88" rx="26" ry="5" fill="#000" opacity=".35"/><path d="M22 58V46a28 28 0 0 1 56 0v12" stroke="#c9a84c" stroke-width="7" fill="none" stroke-linecap="round"/><rect x="10" y="52" width="20" height="30" rx="4" fill="#1a1a1a" stroke="#c9a84c" stroke-width="2"/><rect x="70" y="52" width="20" height="30" rx="4" fill="#1a1a1a" stroke="#c9a84c" stroke-width="2"/><rect x="14" y="58" width="12" height="18" rx="4" fill="#c9a84c" opacity=".55"/><rect x="74" y="58" width="12" height="18" rx="4" fill="#c9a84c" opacity=".55"/><circle cx="50" cy="26" r="2.5" fill="#e8c14a"/><path d="M42 20h16" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/></svg>`,
-            candles: `<svg viewBox="0 0 100 100" class="art" role="img" aria-hidden="true"><ellipse cx="50" cy="88" rx="30" ry="5" fill="#000" opacity=".35"/><rect x="18" y="50" width="18" height="34" rx="2" fill="#1a1a1a" stroke="#c9a84c" stroke-width="1.6"/><rect x="41" y="44" width="18" height="40" rx="2" fill="#262626" stroke="#c9a84c" stroke-width="1.6"/><rect x="64" y="54" width="18" height="30" rx="2" fill="#1a1a1a" stroke="#c9a84c" stroke-width="1.6"/><path d="M27 50v-8M50 44v-9M73 54v-8" stroke="#c9a84c" stroke-width="1.4"/><ellipse cx="27" cy="38" rx="3.5" ry="6" fill="#e8c14a"/><ellipse cx="50" cy="31" rx="4" ry="7" fill="#e8c14a"/><ellipse cx="73" cy="42" rx="3.5" ry="6" fill="#e8c14a"/><ellipse cx="27" cy="39" rx="1.6" ry="3" fill="#fff" opacity=".7"/><ellipse cx="50" cy="32" rx="1.8" ry="3.5" fill="#fff" opacity=".7"/><path d="M22 62h10M45 56h10M68 64h10" stroke="#c9a84c" stroke-width="1" opacity=".45"/></svg>`,
-            projector: `<svg viewBox="0 0 100 100" class="art" role="img" aria-hidden="true"><ellipse cx="50" cy="86" rx="32" ry="6" fill="#000" opacity=".35"/><rect x="14" y="40" width="46" height="34" rx="5" fill="#1a1a1a" stroke="#c9a84c" stroke-width="2"/><circle cx="46" cy="57" r="11" fill="#0f0f0f" stroke="#c9a84c" stroke-width="2"/><circle cx="46" cy="57" r="5" fill="#c9a84c" opacity=".6"/><rect x="60" y="48" width="14" height="10" rx="2" fill="#262626" stroke="#c9a84c" stroke-width="1.5"/><path d="M74 44l20-12v46L74 64z" fill="#c9a84c" opacity=".14" stroke="#c9a84c" stroke-width="1"/><circle cx="24" cy="48" r="2" fill="#c9a84c"/><rect x="20" y="64" width="6" height="4" rx="1" fill="#c9a84c" opacity=".7"/><rect x="30" y="64" width="6" height="4" rx="1" fill="#c9a84c" opacity=".5"/><path d="M18 40V30h10" stroke="#c9a84c" stroke-width="1.5" fill="none"/></svg>`,
-            chocs: `<svg viewBox="0 0 100 100" class="art" role="img" aria-hidden="true"><ellipse cx="50" cy="84" rx="30" ry="5" fill="#000" opacity=".35"/><rect x="16" y="38" width="68" height="40" rx="3" fill="#1a1a1a" stroke="#c9a84c" stroke-width="2"/><path d="M16 48h68" stroke="#c9a84c" stroke-width="1" opacity=".4"/><rect x="50" y="38" width="34" height="40" fill="#c9a84c" opacity=".12"/><path d="M50 38v40" stroke="#c9a84c" stroke-width="1" opacity=".4"/><g fill="#c9a84c"><circle cx="27" cy="60" r="4"/><circle cx="39" cy="60" r="4"/><circle cx="27" cy="71" r="4"/><circle cx="39" cy="71" r="4"/></g><g fill="#e8c14a"><circle cx="60" cy="60" r="4"/><circle cx="72" cy="60" r="4"/><circle cx="60" cy="71" r="4"/><circle cx="72" cy="71" r="4"/></g><path d="M50 38v-8h34v8" fill="#262626" stroke="#c9a84c" stroke-width="1.5"/></svg>`
-        };
-
-        const CATEGORIES = {
-            coffrets: { label: 'Coffrets', icon: 'gift' },
-            montres: { label: 'Montres', icon: 'watch' },
-            maroquinerie: { label: 'Maroquinerie', icon: 'bag' },
-            degustation: { label: 'Dégustation', icon: 'wine' },
-            maison: { label: 'Maison', icon: 'candle' },
-            tech: { label: 'High-tech', icon: 'headphones' }
-        };
-
-        const CATALOG = [
-            { id: 'coffret-or', name: 'Coffret Prestige Or', cat: 'coffrets', price: 189990, old: 250000, badge: 'Bestseller', art: 'giftbox', stock: 8, rating: 4.9, reviewsCount: 412,
-              short: 'Coffret cadeau premium avec chocolats artisanaux, champagne et accessoires de luxe.',
-              desc: "Notre coffret signature : un champagne millésimé, des chocolats artisanaux et des accessoires en cuir, présentés dans un écrin de bois laqué doré. L'ensemble est conçu pour être offert tel quel, sans emballage supplémentaire.",
-              features: ['Champagne millésimé 75 cl', '36 chocolats artisanaux', 'Accessoires cuir (porte-clés, étui)', 'Écrin de bois laqué doré', 'Carte de dégustation personnalisée'] },
-            { id: 'montre', name: 'Montre Élégance', cat: 'montres', price: 349990, old: 450000, badge: 'Nouveau', art: 'luxwatch', stock: 5, rating: 4.8, reviewsCount: 156,
-              short: 'Montre automatique avec bracelet en cuir véritable et boîtier en acier inoxydable.',
-              desc: "Un mouvement automatique de 21 rubis dans un boîtier en acier inoxydable 316L, habillé d'un bracelet de cuir de veau noir. Réserve de marche de 40 heures : elle se porte au poignet comme un objet de transmission.",
-              features: ['Mouvement automatique, 21 rubis', 'Boîtier acier 316L, 40 mm', 'Bracelet cuir de veau', 'Étanche 50 m, garantie 3 ans', 'Gravure du boîtier offerte'] },
-            { id: 'cave', name: 'Cave à Vin Premium', cat: 'degustation', price: 279990, old: 380000, badge: 'Populaire', art: 'wine', stock: 7, rating: 4.7, reviewsCount: 203,
-              short: 'Ensemble dégustation : 3 grands crus, verres cristal et accessoires sommelier.',
-              desc: "Trois grands crus vieillis dans leurs terroirs respectifs, douze verres en cristal sans plomb et l'ensemble des outils de sommelier. Tout ce qu'il faut pour animer une dégustation digne de ce nom.",
-              features: ['3 grands crus (Bordeaux, Bourgogne, Vallée du Rhône)', '12 verres en cristal sans plomb', 'Dégusteur, bouchon et entonnoir', 'Sac en cuir pour le transport'] },
-            { id: 'sac', name: 'Sac Main Cuir Italien', cat: 'maroquinerie', price: 159990, old: 220000, badge: null, art: 'handbag', stock: 9, rating: 4.8, reviewsCount: 187,
-              short: 'Sac à main en cuir italien tanné végétal, doublure en daim, finitions or.',
-              desc: "Cuir pleine fleur tanné végétal issu d'une tannerie familiale toscane, doublure daim et ferrures dorées. Il se patine magnifiquement au fil des années plutôt que de s'user.",
-              features: ['Cuir pleine fleur tanné végétal', 'Doublure daim, finitions or 18 carats', 'Fermoir aimanté avec clé', 'Bandoulière amovible', 'Pochette plate incluse'] },
-            { id: 'casque', name: 'Casque Audio Premium', cat: 'tech', price: 129990, old: 199990, badge: 'Promo', art: 'hp', stock: 16, rating: 4.6, reviewsCount: 289,
-              short: 'Réduction de bruit active, 40h d\'autonomie, son haute résolution.',
-              desc: "Une conception circumaurale accordée pour les sources haute résolution, avec réduction de bruit active hybride et 40 heures d'écoute. Conçu pour être porté pendant un long vol, pas seulement pour le trajet.",
-              features: ['Réduction de bruit hybride adaptative', '40 h d\'autonomie', 'Certifié audio haute résolution', 'Bluetooth 5.4, LDAC et aptX', 'Étui de transport rigide'] },
-            { id: 'bougies', name: 'Collection Bougies Luxe', cat: 'maison', price: 49990, old: 75000, badge: null, art: 'candles', stock: 20, rating: 4.5, reviewsCount: 134,
-              short: 'Set de 6 bougies parfumées artisanales, cire de soja, mèches coton bio.',
-              desc: "Six bougies en cire de soja versées à la main, chacune avec une mèche coton sans plomb et un parfum développé à Grasse. Longue durée de combustion et combustion propre.",
-              features: ['Cire de soja 100 % biodégradable', '6 parfums (figuier, cuir, vanille, pin, rose, thé)', 'Mèches coton sans plomb', '~45 h de combustion par bougie', 'Verre dépoli réutilisable'] },
-            { id: 'projecteur', name: 'Projecteur Home Cinéma 4K', cat: 'tech', price: 199990, old: 280000, badge: 'Nouveau', art: 'projector', stock: 6, rating: 4.7, reviewsCount: 98,
-              short: 'Image 4K Dolby, 3 000 lumens et Netflix intégré. L\'écran de Noël idéal.',
-              desc: "Le moyen le plus simple de transformer un salon en cinéma pour les fêtes. 3 000 lumens ISO, Dolby Vision, et les principales applications de streaming déjà installées.",
-              features: ['3 000 lumens ISO, 4K UHD natif', 'Dolby Vision et Atmos', 'Netflix, YouTube et Prime Video intégrés', 'Correction keystone automatique', 'Haut-parleurs 2×5 W'] },
-            { id: 'chocolats', name: 'Coffret Chocolats Belges', cat: 'degustation', price: 89990, old: 125000, badge: 'Promo', art: 'chocs', stock: 14, rating: 4.9, reviewsCount: 341,
-              short: '48 truffes et pralinés en chocolat noir, lait et noisette. Livraison réfrigérée.',
-              desc: "Quarante-huit pièces d'un chocolatier belge qui tempère encore tout à la main. Pralinés noir, lait et noisette, livrés dans une boîte isotherme pour arriver intacts.",
-              features: ['48 pièces chocolat noir, lait, noisette', 'Chocolat noir 70 % minimum', 'Livraison en boîte isotherme', 'Traçabilité des fèves de cacao', 'Conservation 6 mois'] }
-        ];
-
-        /* ---------- RENDU : CARTE PRODUIT ---------- */
-        function stockPill(stock) {
-            if (stock <= 0) return '<span class="stock-pill out">Rupture</span>';
-            if (stock <= 8) return '<span class="stock-pill low">Plus que ' + stock + '</span>';
-            return '<span class="stock-pill">En stock</span>';
-        }
-
-        function badgeHtml(p) {
-            if (!p.badge) return '';
-            const cls = p.badge === 'Promo' ? 'promo' : p.badge === 'Nouveau' ? 'nouveau' : '';
-            let label = p.badge;
-            if (p.badge === 'Promo') {
-                label += ' -' + Math.round((1 - p.price / p.old) * 100) + '%';
-            }
-            return '<span class="product-badge ' + cls + '">' + esc(label) + '</span>';
-        }
-
-        function discountPct(p) {
-            return p.old ? Math.round((1 - p.price / p.old) * 100) : 0;
-        }
-
-        /* ---------- URGENCE (levier conversion) ----------
-           Le compte a rebours se recalcule sur une fenetre glissante : la
-           "fin de serie" est toujours dans 24-72h, donc toujours vraie. */
-        const URGENCY_WINDOW_MS = 72 * 3600 * 1000;
-        const PROMO_SPAN_MS = 18 * 3600 * 1000;   // duree reelle de la promo
-
-        function promoDeadline(p) {
-            // Ancre stable par produit, et surtout une echeance toujours FUTURE :
-            // on ancre sur la journee pour que chaque reload donne un delai credible.
-            if (!p._anchor) p._anchor = slug(p.id).split('').reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7);
-            const now = Date.now();
-            const day = 24 * 3600 * 1000;
-            // decalage stable dans la journee, borne a [now+45min, now+60h]
-            const offset = (p._anchor % 215) * (60 * 60 * 1000);      // 0..~215h
-            let target = now + offset;
-            if (target - now > 60 * 3600 * 1000) target -= day;        // reste sous 60h
-            if (target - now < 45 * 60 * 1000) target += day;         // reste au-dessus de 45min
-            return target;
-        }
-
-        function urgencyHtml(p) {
-            if (p.stock <= 0) return '';
-            const left = promoDeadline(p);
-            const viewers = p._viewers || (p._viewers = 3 + (slug(p.id).length * 7) % 40);
-            let out = '';
-            if (p.stock <= 8) {
-                out += `<div class="card-urgency"><span class="pulse"></span>Plus que ${p.stock} en stock</div>`;
-            }
-            out += `<div class="card-urgency"><span class="pulse"></span>Fin de promo dans <b class="cd-mini" data-left="${left}">—</b></div>`;
-            out += `<div class="card-viewers">${viewers} personnes regardent ce cadeau</div>`;
-            return out;
-        }
-
-        function tickMiniTimers() {
-            const now = Date.now();
-            document.querySelectorAll('.cd-mini[data-left]').forEach(el => {
-                const left = +el.dataset.left - now;
-                if (left <= 0) { el.textContent = 'bientôt'; return; }
-                const h = Math.floor(left / 3600000);
-                const m = Math.floor((left % 3600000) / 60000);
-                el.textContent = h + 'h ' + String(m).padStart(2, '0');
-            });
-        }
-
-        function cardHtml(p) {
-            const wished = wishlist.includes(p.name);
-            const urgency = urgencyHtml(p);
-            return `
-            <article class="product-card reveal" data-id="${p.id}" data-cat="${p.cat}" data-price="${p.price}" data-badge="${p.badge || ''}" data-name="${esc(norm(p.name + ' ' + p.short + ' ' + p.features.join(' ')))}">
-                <div class="product-img">
-                    ${badgeHtml(p)}
-                    <button class="wish-btn${wished ? ' active' : ''}" onclick="event.stopPropagation();toggleWish(this)" aria-label="${wished ? 'Retirer des favoris' : 'Ajouter aux favoris'}" aria-pressed="${wished}"></button>
-                    ${ART[p.art]}
-                    ${stockPill(p.stock)}
-                </div>
-                <div class="product-info" role="button" tabindex="0" onclick="openDetail('${p.id}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openDetail('${p.id}')}">
-                    <h3>${esc(p.name)}</h3>
-                    <div class="card-rating">${starRow(p.rating)}<span>${p.rating} (${p.reviewsCount})</span></div>
-                    ${urgency}
-                    <p class="desc">${esc(p.short)}</p>
-                    <div class="product-price">
-                        <span class="price-current">${fmt(p.price)}</span>
-                        <span class="price-old">${fmt(p.old)}</span>
-                    </div>
-                    <button class="add-to-cart" onclick="event.stopPropagation();addToCart('${p.id}')" ${p.stock <= 0 ? 'disabled' : ''}>
-                        ${p.stock <= 0 ? 'Indisponible' : 'Ajouter'}
-                    </button>
-                </div>
-            </article>`;
-        }
-
-        function renderCatalog() {
-            $('products-grid').innerHTML = CATALOG.map(cardHtml).join('');
-            observeReveals();
-        }
-
-        /* ---------- SYNCHRONISATION CATALOGUE / DOM ---------- */
-        function cards() {
-            return Array.from(document.querySelectorAll('.product-card'));
-        }
-
-        function cardEl(id) {
-            return document.querySelector('.product-card[data-id="' + id + '"]');
-        }
-
-        function productById(id) {
-            return CATALOG.find(p => p.id === id);
-        }
-
-        function productByName(name) {
-            return CATALOG.find(p => p.name === name);
-        }
-
-        /* ---------- AVIS (persistés) ---------- */
-        const SEED_REVIEWS = {
-            'coffret-or': [
-                { name: 'Aïcha B.', rating: 5, text: "Le coffret est magnifique, l'écrin doré fait vraiment effet. Le champagne a beaucoup plu à mon père.", when: Date.now() - 5 * 86400000, verified: true },
-                { name: 'Kwame A.', rating: 5, text: "Commande reçue en 24h à Lomé, emballage intact. La carte de dégustation est un détail super attentionné.", when: Date.now() - 17 * 86400000, verified: true }
-            ],
-            cave: [
-                { name: 'Fatou D.', rating: 5, text: "Les verres en cristal sont superbes et les trois crus très bien choisis. J'ai offert le coffret, ma femme a adoré la dégustation.", when: Date.now() - 8 * 86400000, verified: true }
-            ],
-            chocolats: [
-                { name: 'Nathalie T.', rating: 5, text: "Les truffes sont arrivées fraîches, boîte isotherme efficace. Mon mari a fini le paquet en deux jours.", when: Date.now() - 2 * 86400000, verified: true }
-            ],
-            montre: [
-                { name: 'Serge M.', rating: 5, text: "Montre magnifique, le bracelet cuir est très souple. Je la porte tous les jours depuis trois semaines.", when: Date.now() - 12 * 86400000, verified: true }
-            ]
-        };
-
-        function allReviews() {
-            try {
-                const r = localStorage.getItem(REVIEWS_KEY);
-                const p = r ? JSON.parse(r) : {};
-                return (p && typeof p === 'object' && !Array.isArray(p)) ? p : {};
-            } catch (e) { return {}; }
-        }
-
-        function saveReviews(map) {
-            try { localStorage.setItem(REVIEWS_KEY, JSON.stringify(map)); } catch (e) {}
-        }
-
-        function reviewsFor(id) {
-            const custom = allReviews()[id] || [];
-            const seed = SEED_REVIEWS[id] || [];
-            return [...custom, ...seed].sort((a, b) => b.when - a.when);
-        }
-
-        function averageRating(p) {
-            const custom = (allReviews()[p.id] || []).filter(r => typeof r.rating === 'number');
-            if (!custom.length) return p.rating;
-            const n = p.reviewsCount + custom.length;
-            return (p.rating * p.reviewsCount + custom.reduce((s, r) => s + r.rating, 0)) / n;
-        }
-
-        function addReview(id, review) {
-            const map = allReviews();
-            if (!Array.isArray(map[id])) map[id] = [];
-            map[id].push({ ...review, when: Date.now(), verified: false });
-            saveReviews(map);
-        }
-
-        function initials(name) {
-            return name.trim().split(/\s+/).slice(0, 2).map(w => w[0]).join('').toUpperCase();
-        }
-
-        function reviewHtml(r) {
-            return `
-            <div class="review">
-                <div class="review-head">
-                    <div class="review-avatar">${esc(initials(r.name))}</div>
-                    <div>
-                        <div class="review-who">${esc(r.name)} ${r.verified ? '<span class="verified-tag">ACHAT VÉRIFIÉ</span>' : ''}</div>
-                        ${starRow(r.rating)}
-                    </div>
-                    <span class="review-when">${timeAgo(r.when)}</span>
-                </div>
-                <p class="review-text">${esc(r.text)}</p>
-                ${r.photo ? `<img class="review-photo" src="${r.photo}" alt="Photo de l'avis par ${esc(r.name)}" onclick="openLightbox('${r.photo}')" loading="lazy">` : ''}
-            </div>`;
-        }
-
-        function reviewsHtml(p) {
-            const list = reviewsFor(p.id);
-            const avg = averageRating(p);
-            const total = p.reviewsCount + list.filter(r => !r.verified).length;
-            return `
-            <div class="reviews-head">
-                <div class="reviews-score">${avg.toFixed(1)}</div>
-                <div>
-                    ${starRow(avg)}
-                    <div class="reviews-meta">${total} avis vérifiés</div>
-                </div>
-            </div>
-            <div id="review-list">${list.length ? list.map(reviewHtml).join('') : '<p class="reviews-meta">Aucun avis pour le moment. Soyez le premier.</p>'}</div>
-            <button class="review-form-toggle" id="review-toggle" onclick="toggleReviewForm()"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.4 3.9 20 8.5 8.8 19.7l-5.2 1.3 1.3-5.2z"/><path d="m13.6 5.7 4.6 4.6"/></svg> Rédiger un avis</button>
-            <div id="review-form-wrap" style="display:none">
-                <form id="review-form" onsubmit="return submitReview(event)">
-                    <div class="field">
-                        <label>Avis</label>
-                        <div class="star-input">
-                            ${[5, 4, 3, 2, 1].map(v => `
-                                <input type="radio" name="rating" id="star${v}" value="${v}" ${v === 5 ? 'checked' : ''} required>
-                                <label for="star${v}" title="${v} étoile(s)">★</label>`).join('')}
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label for="rv-name">Votre nom *</label>
-                        <input id="rv-name" name="name" required minlength="2" maxlength="40" placeholder="Ex : Mireille D.">
-                    </div>
-                    <div class="field">
-                        <label for="rv-text">Votre expérience *</label>
-                        <textarea id="rv-text" name="text" rows="3" required minlength="15" maxlength="800" placeholder="Le produit vous a plu ? Livraison, emballage, qualité..."></textarea>
-                    </div>
-                    <div class="field">
-                        <label>Photo (optionnel)</label>
-                        <label class="photo-drop" for="rv-photo" id="photo-drop"><svg class="ic " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.4h3.4l1.5-2.4h8.2l1.5 2.4H21v10.2H3z"/><circle cx="12" cy="13.2" r="3.4"/></svg> Ajouter une photo — 4 Mo max</label>
-                        <input type="file" id="rv-photo" accept="image/*" style="display:none" onchange="handlePhoto(this)">
-                        <div class="photo-preview" id="photo-preview">
-                            <img id="photo-img" src="" alt="Aperçu">
-                            <button type="button" class="btn-secondary" onclick="clearPhoto()">Retirer</button>
-                        </div>
-                    </div>
-                    <button class="checkout-btn" type="submit">Publier mon avis</button>
-                </form>
-            </div>`;
-        }
-
-        let pendingPhoto = null;
-        let activeProductId = null;
-
-        function toggleReviewForm() {
-            const w = $('review-form-wrap');
-            const open = w.style.display !== 'none';
-            w.style.display = open ? 'none' : '';
-            if (!open) $('rv-name').focus();
-        }
-
-        function clearPhoto() {
-            pendingPhoto = null;
-            $('rv-photo').value = '';
-            $('photo-preview').classList.remove('show');
-            $('photo-drop').style.display = '';
-        }
-
-        function handlePhoto(input) {
-            const file = input.files && input.files[0];
-            if (!file) return;
-            const MAX = 4 * 1024 * 1024;
-            if (!/^image\//.test(file.type)) {
-                toast('Choisissez une image (JPG, PNG ou WebP)');
-                input.value = '';
-                return;
-            }
-            if (file.size > MAX) {
-                toast('Photo trop lourde (4 Mo maximum)');
-                input.value = '';
-                return;
-            }
-            const reader = new FileReader();
-            reader.onload = () => {
-                const img = new Image();
-                img.onload = () => {
-                    const MAX_W = 900;
-                    const scale = Math.min(1, MAX_W / img.width);
-                    const canvas = document.createElement('canvas');
-                    canvas.width = Math.round(img.width * scale);
-                    canvas.height = Math.round(img.height * scale);
-                    canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
-                    try {
-                        pendingPhoto = canvas.toDataURL('image/jpeg', 0.72);
-                        $('photo-img').src = pendingPhoto;
-                        $('photo-preview').classList.add('show');
-                        $('photo-drop').style.display = 'none';
-                    } catch (e) {
-                        toast('Impossible de traiter cette image');
-                    }
-                };
-                img.onerror = () => { toast('Image illisible'); input.value = ''; };
-                img.src = reader.result;
-            };
-            reader.onerror = () => { toast('Lecture du fichier impossible'); input.value = ''; };
-            reader.readAsDataURL(file);
-        }
-
-        function submitReview(e) {
-            e.preventDefault();
-            const form = e.target;
-            if (!form.checkValidity()) { form.reportValidity(); return false; }
-            const data = new FormData(form);
-            const text = String(data.get('text')).trim();
-            if (text.length < 15) { toast('Votre avis doit faire au moins 15 caractères'); return false; }
-            const p = productById(activeProductId);
-            if (!p) return false;
-            addReview(p.id, {
-                name: String(data.get('name')).trim(),
-                rating: Number(data.get('rating')),
-                text,
-                photo: pendingPhoto
-            });
-            pendingPhoto = null;
-            toast('Merci ! Votre avis a été publié.');
-            renderDetail(p.id);
-            return false;
-        }
-
-        function openLightbox(src) {
-            $('lightbox-img').src = src;
-            $('lightbox').classList.add('active');
-            document.body.style.overflow = 'hidden';
-            pushModal('lightbox');
-        }
-
-        function closeLightbox() {
-            $('lightbox').classList.remove('active');
-            $('lightbox-img').removeAttribute('src');
-            popModal('lightbox');
-            if (!topModal()) document.body.style.overflow = '';
-        }
-
-        /* ---------- FICHE PRODUIT ---------- */
-        function relatedProducts(p, limit) {
-            const same = CATALOG.filter(x => x.id !== p.id && x.cat === p.cat);
-            const rest = CATALOG.filter(x => x.id !== p.id && x.cat !== p.cat)
-                .sort((a, b) => Math.abs(a.price - p.price) - Math.abs(b.price - p.price));
-            return [...same, ...rest].slice(0, limit || 3);
-        }
-
-        function bundleHtml(p) {
-            const picks = relatedProducts(p, 2);
-            if (!picks.length) return '';
-            const items = [p, ...picks];
-            const total = items.reduce((s, x) => s + x.price, 0);
-            const sum = items.reduce((s, x) => s + x.old, 0);
-            const save = sum - total;
-            return `
-            <div class="bundle">
-                <h4>Souvent achetés ensemble</h4>
-                <div class="bundle-items">
-                    ${items.map(x => `
-                        <span class="bundle-chip">
-                            <span class="mini">${ART[x.art]}</span>
-                            <span>${esc(x.name)}</span>
-                        </span>`).join('')}
-                </div>
-                <div class="bundle-total">
-                    <span><del>${fmt(sum)}</del>${save > 0 ? '<span style="color:var(--green-dark);font-size:0.78rem;"> −${fmt(save)}</span>' : ''}</span>
-                    <b>${fmt(total)}</b>
-                </div>
-                <button class="add-to-cart" onclick="addBundle('${p.id}')">Ajouter le trio — ${fmt(total)}</button>
-            </div>`;
-        }
-
-        function addBundle(id) {
-            const p = productById(id);
-            if (!p) return;
-            const picks = [p, ...relatedProducts(p, 2)];
-            let added = 0;
-            picks.forEach(x => {
-                if (x.stock > 0) { addToCart(x.id, { quiet: true }); added++; }
-            });
-            if (!added) { toast('Ces articles sont indisponibles'); return; }
-            toast('Trio ajouté au panier (' + added + ' articles)');
-        }
-
-        function openDetail(id) {
-            const p = productById(id);
-            if (!p) return;
-            activeProductId = id;
-            lastFocused = document.activeElement;
-            renderDetail(id);
-            $('detail-modal').classList.add('active');
-            document.body.style.overflow = 'hidden';
-            pushModal('detail-modal');
-            setTimeout(() => $('detail-modal').querySelector('.close-cart').focus(), 30);
-        }
-
-        function renderDetail(id) {
-            const p = productById(id);
-            if (!p) return;
-            activeProductId = id;
-
-            $('detail-art').innerHTML = ART[p.art];
-            $('detail-art').style.setProperty('--art-a', 'linear-gradient(150deg,#fff9f7,#ffe9e2)');
-            $('detail-art').style.background = 'linear-gradient(150deg, #fff9f7, #ffe9e2)';
-
-            const cat = CATEGORIES[p.cat];
-            const pct = discountPct(p);
-            const stars = Math.round(averageRating(p));
-
-            $('detail-head').innerHTML = `
-                <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-                    <span style="font-size:.7rem;letter-spacing:1.5px;text-transform:uppercase;opacity:.55;">${esc(cat ? cat.icon + ' ' + cat.label : '')}</span>
-                    ${p.badge ? `<span class="product-badge ${p.badge === 'Promo' ? 'promo' : p.badge === 'Nouveau' ? 'nouveau' : ''}" style="position:static;">${esc(p.badge)}</span>` : ''}
-                </div>
-                <h3 id="detail-name">${esc(p.name)}</h3>
-                <div class="card-rating">${starRow(averageRating(p))}<span>${averageRating(p).toFixed(1)} · ${p.reviewsCount + (allReviews()[p.id] || []).length} avis</span></div>
-                <p class="desc">${esc(p.desc)}</p>
-                <ul class="feature-list">${p.features.map(f => `<li>${esc(f)}</li>`).join('')}</ul>
-                <div class="detail-price">
-                    <span class="now">${fmt(p.price)}</span>
-                    ${p.old ? `<span class="was">${fmt(p.old)}</span>` : ''}
-                    ${pct > 0 ? `<span class="save">−${pct}%</span>` : ''}
-                </div>`;
-
-            const maxAdd = Math.max(0, Math.min(p.stock, 10));
-            $('detail-actions').innerHTML = `
-                <span class="qty-control">
-                    <button class="qty-btn" onclick="detailQty(-1)" aria-label="Diminuer">−</button>
-                    <span class="qty-value" id="detail-qty">1</span>
-                    <button class="qty-btn" onclick="detailQty(1)" aria-label="Augmenter" ${maxAdd <= 1 ? 'disabled' : ''}>+</button>
-                </span>
-                <button class="add-to-cart" onclick="addFromDetail()" ${p.stock <= 0 ? 'disabled' : ''}>
-                    ${p.stock <= 0 ? 'Rupture de stock' : 'Ajouter au panier'}
-                </button>`;
-
-            $('detail-bundle').innerHTML = bundleHtml(p);
-            $('detail-reviews').innerHTML = reviewsHtml(p);
-        }
-
-        let detailQtyValue = 1;
-
-        function detailQty(delta) {
-            const p = productById(activeProductId);
-            if (!p) return;
-            const max = Math.max(1, Math.min(p.stock, 10));
-            detailQtyValue = Math.max(1, Math.min(max, detailQtyValue + delta));
-            $('detail-qty').textContent = detailQtyValue;
-            const plus = $('detail-actions').querySelector('.qty-btn:last-of-type');
-            if (plus) plus.disabled = detailQtyValue >= max;
-        }
-
-        function addFromDetail() {
-            const p = productById(activeProductId);
-            if (!p || p.stock <= 0) return;
-            addToCart(p.id, { qty: detailQtyValue });
-            detailQtyValue = 1;
-            closeDetail();
-        }
-
-        function closeDetail() {
-            $('detail-modal').classList.remove('active');
-            popModal('detail-modal');
-            if (!topModal()) document.body.style.overflow = '';
-            if (lastFocused && lastFocused.focus) lastFocused.focus();
-        }
-
-        /* ---------- MENTIONS LÉGALES ---------- */
-        const LEGAL = {
-            mentions: {
-                title: 'Mentions légales',
-                body: `
-                <h4>Éditeur du site</h4>
-                <p>Noël Prestige — SARL au capital de 5 000 000 FCFA. Siège social : Boulevard de la Marina, Cotonou, Bénin. Téléphone : +229 96 12 34 56. Courriel : contact@noelprestige.com.</p>
-                <h4>Directeur de la publication</h4>
-                <p>Le gérant de Noël Prestige.</p>
-                <h4>Hébergement</h4>
-                <p>Les données sont hébergées sur l'infrastructure du client's serveur. Aucun transfert de données hors Afrique de l'Ouest n'est effectué.</p>
-                <h4>Activité</h4>
-                <p>Vente en ligne de cadeaux décoratifs et de jouets. Immatriculation au Registre du Commerce du Bénin en cours. N° contribuable : à compléter.</p>`
-            },
-            cgv: {
-                title: 'Conditions générales de vente',
-                body: `
-                <h4>Objet</h4>
-                <p>Les présentes conditions régissent les ventes conclues sur le site Noël Prestige entre le vendeur et tout acheteur majeur agissant à titre non professionnel.</p>
-                <h4>Produits et prix</h4>
-                <p>Les produits sont décrits avec la plus grande exactitude. Les prix sont indiqués en francs CFA (XOF), toutes taxes comprises, hors frais de livraison. Noël Prestige se réserve le droit de modifier ses prix à tout moment ; les produits sont facturés au tarif en vigueur au moment de la validation de la commande.</p>
-                <h4>Commande et paiement</h4>
-                <p>La commande devient définitive après réception du paiement. Moyens acceptés : MTN Mobile Money, Moov Money, carte bancaire, et paiement à la livraison dans la limite de 100 000 FCFA. Toute tentative de fraude entraîne l'annulation de la commande sans indemnité.</p>
-                <h4>Livraison</h4>
-                <p>Livraison offerte dès 50 000 FCFA d'achat, sinon 5 000 FCFA. Délais indicatifs : 24 à 48h à Cotonou et Porto-Novo, 48 à 72h pour Lomé et Abidjan. Les délais sont indicatifs et n'engagent pas le vendeur en cas de force majeure. Le transfert des risques intervient à la livraison physique.</p>
-                <h4>Disponibilité</h4>
-                <p>En cas d'indisponibilité d'un article après validation, le vendeur en informe l'acheteur sous 48h et propose un produit de valeur équivalente ou le remboursement intégral.</p>
-                <h4>Retour et garantie</h4>
-                <p>L'acheteur dispose de 15 jours après réception pour exercer son droit de rétractation. Les produits doivent être non ouverts et dans leur emballage d'origine. Les frais de retour sont pris en charge par le vendeur. Les produits défectueux sont remplacés ou remboursés à vie de la garantie.</p>
-                <h4>Litiges</h4>
-                <p>Les présentes sont soumises au droit Bénin. En cas de litige, une solution amiable sera recherchée avant toute action judiciaire. Les tribunaux de Cotonou sont seuls compétents.</p>`
-            },
-            privacy: {
-                title: 'Politique de confidentialité',
-                body: `
-                <h4>Données collectées</h4>
-                <p>Ce site collecte uniquement les données nécessaires au traitement de votre commande : nom, téléphone, ville, adresse de livraison, moyen de paiement choisi, et le contenu de vos avis si vous en publiez. Aucune donnée bancaire complète n'est collectée : les paiements sont traités par les opérateurs Mobile Money ou par le prestataire de carte.</p>
-                <h4>Finalités</h4>
-                <ul>
-                <li>Traiter et livrer votre commande</li>
-                <li>Vous contacter au sujet de votre commande</li>
-                <li>Conserver votre panier et vos favoris sur votre appareil</li>
-                <li>Établir des statistiques de vente agrégées</li>
-                </ul>
-                <h4>Base légale</h4>
-                <p>L'exécution du contrat de vente, votre consentement explicite pour les avis et contacts marketing, et l'intérêt légitime du vendeur pour améliorer son service.</p>
-                <h4>Conservation</h4>
-                <p>Les données de commande sont conservées 10 ans à des fins comptables et fiscales. Les avis publiés le restent tant qu'ils ne sont pas supprimés. Les données de contact sont supprimées sur demande.</p>
-                <h4>Vos droits</h4>
-                <p>Conformément à la loi béninoise sur la protection des données, vous disposez d'un droit d'accès, de rectification, d'opposition et de suppression de vos données. Adressez votre demande à contact@noelprestige.com. Une réponse est apportée sous 30 jours.</p>
-                <h4>Stockage local</h4>
-                <p>Votre panier, vos favoris et vos brouillons d'avis sont enregistrés dans le stockage local de votre navigateur. Ces données ne quittent jamais votre appareil tant que vous ne validez pas de commande.</p>`
-            },
-            cookies: {
-                title: 'Politique de cookies',
-                body: `
-                <h4>Cookies de mesure d'audience</h4>
-                <p>Le site peut déposer des cookies de mesure d'audience afin de comprendre quelles pages sont consultées et d'améliorer le contenu et les offres.</p>
-                <h4>Stockage local (localStorage)</h4>
-                <p>Le site utilise le stockage local du navigateur — et non des cookies — pour conserver votre panier, votre liste de favoris et vos brouillons d'avis. Ces données sont propres à votre navigateur et ne sont jamais transmises à un tiers.</p>
-                <h4>Durée de conservation</h4>
-                <p>Les cookies de mesure d'audience sont conservés 13 mois maximum. Les données en stockage local persistent jusqu'à ce que vous vidiez le panier, retiriez vos favoris ou effaciez les données de votre navigateur.</p>
-                <h4>Gérer vos préférences</h4>
-                <p>Vous pouvez à tout moment supprimer les données enregistrées depuis les réglages de confidentialité de votre navigateur. Cela efface votre panier et vos favoris sans conséquence sur votre navigation.</p>
-                <h4>Aucun cookie publicitaire</h4>
-                <p>Ce site ne dépose aucun cookie publicitaire ni traceur tiers de réseau social.</p>`
-            },
-            contact: {
-                title: 'Nous contacter',
-                body: `
-                <h4>Nous écrire</h4>
-                <p>Courriel : contact@noelprestige.com<br>Téléphone / WhatsApp : +229 96 12 34 56<br>Instagram : @noelprestige</p>
-                <h4>Horaires du service client</h4>
-                <p>Du lundi au samedi, de 8h à 20h (heure de Cotonou). Réponse sous 24h ouvrées.</p>
-                <h4>Adresse</h4>
-                <p>Boulevard de la Marina, Quartier Ganhi<br>Cotonou, Bénin</p>
-                <h4>Suivre une commande</h4>
-                <p>Conservez votre référence de commande (format NP-XXXXXX) : elle nous permet de retrouver votre colis immédiatement.</p>`
-            }
-        };
-
-        function openLegal(tab) {
-            const key = LEGAL[tab] ? tab : 'mentions';
-            $('legal-title').textContent = LEGAL[key].title;
-            $('legal-tabs').innerHTML = Object.entries(LEGAL)
-                .map(([k, v]) => `<button class="chip${k === key ? ' active' : ''}" onclick="openLegal('${k}')">${esc(v.title)}</button>`)
-                .join('');
-            $('legal-body').innerHTML = LEGAL[key].body +
-                '<p class="updated">Dernière mise à jour : décembre 2026</p>';
-            $('legal-modal').classList.add('active');
-            document.body.style.overflow = 'hidden';
-            pushModal('legal-modal');
-            $('legal-body').scrollTop = 0;
-        }
-
-        function closeLegal() {
-            $('legal-modal').classList.remove('active');
-            popModal('legal-modal');
-            if (!topModal()) document.body.style.overflow = '';
-        }
-
-        /* ---------- NEWSLETTER ---------- */
-        function subscribeNewsletter(e) {
-            e.preventDefault();
-            const form = e.target;
-            const input = form.querySelector('input[type="email"]');
-            const email = input ? input.value.trim() : '';
-            try {
-                localStorage.setItem(NEWSLETTER_KEY, JSON.stringify({ email, at: Date.now() }));
-            } catch (err) {}
-            toast('Merci ! Votre code promo NOEL15 est activé');
-            $('promo-input').value = 'NOEL15';
-            applyPromo();
-            form.reset();
-        }
-
-        function initNewsletter() {
-            try {
-                const saved = JSON.parse(localStorage.getItem(NEWSLETTER_KEY) || 'null');
-                if (saved && saved.email) {
-                    const input = document.querySelector('.newsletter-form input');
-                    if (input) input.placeholder = saved.email + ' inscrit(e)';
-                }
-            } catch (e) {}
-        }
-
-        /* ---------- API (socle prêt pour un vrai back-end) ---------- */
-        const API = {
-            endpoint: ORDERS_ENDPOINT,
-            latency: 600,
-            _failNext: false,
-
-            _delay(ms) {
-                return new Promise(r => setTimeout(r, ms === undefined ? this.latency : ms));
-            },
-            _read(key, fallback) {
-                try {
-                    const v = localStorage.getItem(key);
-                    return v ? JSON.parse(v) : fallback;
-                } catch (e) { return fallback; }
-            },
-            _write(key, value) {
-                try { localStorage.setItem(key, JSON.stringify(value)); return true; }
-                catch (e) { return false; }
-            },
-
-            async listProducts() { await this._delay(150); return CATALOG.slice(); },
-            async getProduct(id) { await this._delay(120); return productById(id) || null; },
-            async getReviews(id) { await this._delay(120); return reviewsFor(id); },
-            async addReview(id, review) { await this._delay(450); addReview(id, review); return true; },
-            async createOrder(order) { await this._delay(); return this._persistOrder(order); },
-
-            _persistOrder(order) {
-                const orders = this._read(ORDERS_KEY, []);
-                const ref = 'NP-' + String(Date.now()).slice(-6);
-                const record = { ...order, ref, createdAt: Date.now(), status: 'confirmed' };
-                orders.push(record);
-                if (!this._write(ORDERS_KEY, orders)) {
-                    toast('Commande enregistrée, mais le stockage local est plein.');
-                }
-                return record;
-            }
-        };
-
-        function updateCountdown() {
-            const now = new Date();
-            let christmas = new Date(now.getFullYear(), 11, 25);
-            if (now > christmas) christmas = new Date(now.getFullYear() + 1, 11, 25);
-            const diff = christmas - now;
-            $('cd-days').textContent = Math.floor(diff / 86400000);
-            $('cd-hours').textContent = String(Math.floor((diff % 86400000) / 3600000)).padStart(2, '0');
-            $('cd-mins').textContent = String(Math.floor((diff % 3600000) / 60000)).padStart(2, '0');
-            $('cd-secs').textContent = String(Math.floor((diff % 60000) / 1000)).padStart(2, '0');
-        }
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
-
-        /* ---------- MOBILE MENU ---------- */
-        const navLinks = $('nav-links');
-        const menuToggle = $('menu-toggle');
-        function toggleMenu() {
-            const open = navLinks.classList.toggle('open');
-            menuToggle.setAttribute('aria-expanded', open);
-            menuToggle.textContent = open ? '✕' : '☰';
-        }
-        function closeMenu() {
-            navLinks.classList.remove('open');
-            menuToggle.setAttribute('aria-expanded', 'false');
-            menuToggle.textContent = '☰';
-        }
-        menuToggle.addEventListener('click', e => e.stopPropagation());
-        document.addEventListener('click', e => {
-            if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) closeMenu();
-        });
-
-        /* ---------- TOAST ---------- */
-        function toast(msg) {
-            const wrap = $('toast-wrap');
-            const el = document.createElement('div');
-            el.className = 'toast';
-            el.textContent = msg;
-            wrap.appendChild(el);
-            setTimeout(() => {
-                el.classList.add('out');
-                el.addEventListener('animationend', () => el.remove());
-            }, 2200);
-        }
-
-        /* ---------- SHOP FILTERS ---------- */
-        const searchInput = $('search-input');
-        const budgetSelect = $('budget-select');
-        let state = { filter: 'all', sort: 'default', query: '', maxPrice: 0 };
-
-        function cardMatches(card) {
-            const { filter, query, maxPrice } = state;
-            const badge = card.dataset.badge;
-            const name = norm(card.dataset.name || '');
-            const okFilter =
-                filter === 'all' ? true :
-                filter === 'promo' ? badge === 'Promo' :
-                filter === 'best' ? badge === 'Bestseller' :
-                filter === 'wish' ? wishlist.includes(card.querySelector('h3').textContent) :
-                card.dataset.cat === filter;
-            const okBudget = !maxPrice || +card.dataset.price <= maxPrice;
-            const q = norm(query);
-            const okQuery = !q || name.includes(q);
-            return okFilter && okBudget && okQuery;
-        }
-
-        function applyFilters() {
-            const list = cards();
-            let shown = 0;
-            list.forEach(card => {
-                const visible = cardMatches(card);
-                card.hidden = !visible;
-                if (visible) shown++;
-            });
-
-            if (state.sort !== 'default') {
-                const dir = state.sort === 'price-asc' ? 1 : -1;
-                const sorted = [...list].sort((a, b) => (a.dataset.price - b.dataset.price) * dir);
-                sorted.forEach(c => $('products-grid').appendChild(c));
-            }
-
-            $('no-results').classList.toggle('show', shown === 0);
-            $('results-count').textContent = shown === list.length
-                ? ''
-                : shown + ' cadeau' + (shown > 1 ? 's' : '') + ' trouvé' + (shown > 1 ? 's' : '');
-        }
-
-        function setFilter(filter) {
-            state.filter = filter;
-            document.querySelectorAll('#filter-chips .chip').forEach(c => {
-                c.classList.toggle('active', c.dataset.filter === filter);
-            });
-                        applyFilters();
-            $('collection').scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-
-        function setSort(sort) {
-            state.sort = sort;
-            document.querySelectorAll('#filter-chips .chip').forEach(c => {
-                if (c.dataset.sort) c.classList.toggle('active', c.dataset.sort === sort);
-            });
-            applyFilters();
-        }
-
-        $('filter-chips').addEventListener('click', e => {
-            const chip = e.target.closest('.chip');
-            if (!chip) return;
-            if (chip.dataset.filter) setFilter(chip.dataset.filter);
-            if (chip.dataset.sort) setSort(chip.dataset.sort);
-        });
-
-        budgetSelect.addEventListener('change', e => {
-            state.maxPrice = +e.target.value;
-            applyFilters();
-        });
-
-        searchInput.addEventListener('input', e => {
-            state.query = e.target.value;
-            applyFilters();
-        });
-
-        function resetFilters() {
-            state.query = '';
-            searchInput.value = '';
-            budgetSelect.value = '0';
-            state.maxPrice = 0;
-            setFilter('all');
-        }
-
-        /* ---------- WISHLIST ---------- */
-        let wishlist = loadWishlist();
-
-        function loadWishlist() {
-            try {
-                const raw = localStorage.getItem(WISH_KEY);
-                const p = raw ? JSON.parse(raw) : [];
-                return Array.isArray(p) ? p : [];
-            } catch (e) { return []; }
-        }
-
-        function saveWishlist() {
-            try { localStorage.setItem(WISH_KEY, JSON.stringify(wishlist)); } catch (e) {}
-        }
-
-        function toggleWish(btn) {
-            const name = btn.closest('.product-card').querySelector('h3').textContent;
-            const i = wishlist.indexOf(name);
-            if (i >= 0) {
-                wishlist.splice(i, 1);
-                btn.classList.remove('active');
-                btn.setAttribute('aria-label', 'Ajouter aux favoris');
-                toast(name + ' retiré des favoris');
-            } else {
-                wishlist.push(name);
-                btn.classList.add('active');
-                btn.setAttribute('aria-label', 'Retirer des favoris');
-                toast(name + ' ajouté aux favoris');
-            }
-            saveWishlist();
-            $('wish-count').textContent = wishlist.length;
-            applyFilters();
-        }
-
-        function initWishlist() {
-            cards().forEach(card => {
-                const btn = card.querySelector('.wish-btn');
-                if (!btn) return;
-                const on = wishlist.includes(card.querySelector('h3').textContent);
-                btn.classList.toggle('active', on);
-                btn.setAttribute('aria-label', on ? 'Retirer des favoris' : 'Ajouter aux favoris');
-                btn.setAttribute('aria-pressed', on);
-            });
-            $('wish-count').textContent = wishlist.length;
-        }
-
-        /* ---------- GIFT FINDER ---------- */
-        function runFinder() {
-            const who = $('finder-who').value;
-            const max = +$('finder-budget').value;
-            state.maxPrice = max;
-            budgetSelect.value = max ? String(max) : '0';
-            setFilter(who);
-            // reflect category in the chip row too
-            const shown = cards.filter(c => !c.hidden).length;
-            $('finder-result').innerHTML = shown
-                ? '<b>' + shown + '</b> idée' + (shown > 1 ? 's' : '') + ' trouvée' + (shown > 1 ? 's' : '') +
-                  ' pour un budget de ' + (max ? fmt(max) : 'tout budget') + '.'
-                : 'Aucun cadeau dans ce budget — essayez un budget plus élevé.';
-        }
-
-        /* ---------- CODE PROMO ---------- */
-        function applyPromo() {
-            const input = $('promo-input');
-            const code = (input.value || '').trim().toUpperCase();
-            if (!code) return;
-            if (PROMO_CODES[code]) {
-                promo = { code, pct: PROMO_CODES[code] };
-                input.value = '';
-                updateCartUI();
-                toast('Code ' + code + ' appliqué — ' + promo.pct + '% de remise');
-            } else {
-                toast('Code promo invalide');
-            }
-        }
-
-        /* ---------- CHECKOUT ---------- */
-        let lastFocused = null;
-
-        function focusables(root) {
-            // no visibility filter: we only ever call this on the *open* modal,
-            // and offsetParent is unreliable (null for position:fixed elements)
-            return [...root.querySelectorAll(
-                'a[href], button:not([disabled]), input:not([disabled]):not([type="hidden"]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
-            )];
-        }
-
-        function openCheckout() {
-            if (!cart.length) return;
-            closeCart();
-            lastFocused = document.activeElement;
-            modalStack.length = 0;
-
-            const sub = subtotal() - discount();
-            const ship = shipping();
-            const count = cart.reduce((s, i) => s + i.qty, 0);
-            $('order-recap').innerHTML = `
-                <div class="row"><span>${count} article${count > 1 ? 's' : ''}</span><span>${fmt(sub)}</span></div>
-                <div class="row"><span>Livraison</span><span>${ship === 0 ? 'Offerte' : fmt(ship)}</span></div>
-                <div class="row"><span>Emballage cadeau</span><span>Offert</span></div>
-                <div class="row total"><span>Total à payer</span><span>${fmt(sub + ship)}</span></div>`;
-
-            $('checkout-form-view').style.display = '';
-            $('checkout-done').style.display = 'none';
-            $('checkout-form').reset();
-
-            $('checkout-modal').classList.add('active');
-            document.body.style.overflow = 'hidden';
-            pushModal('checkout-modal');
-            setTimeout(() => $('c-name').focus(), 30);
-        }
-
-        function closeCheckout() {
-            $('checkout-modal').classList.remove('active');
-            popModal('checkout-modal');
-            if (!topModal()) document.body.style.overflow = '';
-            if (lastFocused && lastFocused.focus) lastFocused.focus();
-        }
-
-        async function submitOrder(e) {
-            e.preventDefault();
-            const form = e.target;
-            if (!form.checkValidity()) {
-                form.reportValidity();
-                return false;
-            }
-
-            const data = new FormData(form);
-            const total = subtotal() - discount() + shipping();
-            const ship = shipping();
-            const count = cart.reduce((s, i) => s + i.qty, 0);
-            const items = cart.map(i => ({ id: i.id, name: i.name, price: i.price, qty: i.qty }));
-
-            const btn = form.querySelector('button[type="submit"]');
-            btn.disabled = true;
-            btn.textContent = 'Envoi en cours…';
-
-            let record;
-            try {
-                record = await API.createOrder({
-                    customer: {
-                        name: String(data.get('name')).trim(),
-                        phone: String(data.get('phone')).trim(),
-                        city: data.get('city'),
-                        address: String(data.get('address') || '').trim(),
-                        note: String(data.get('note') || '').trim()
-                    },
-                    payment: data.get('pay'),
-                    items,
-                    subtotal: subtotal(),
-                    shipping: ship,
-                    total
-                });
-            } catch (err) {
-                btn.disabled = false;
-                btn.textContent = 'Valider ma commande';
-                console.error('createOrder failed', err);
-                toast('Commande non enregistrée. Vérifiez votre connexion et réessayez.');
-                return false;
-            }
-
-            $('done-msg').textContent =
-                'Votre commande de ' + count + ' article(s) pour ' + fmt(total) +
-                ' est confirmée. Paiement : ' + data.get('pay') + ', livraison à ' + data.get('city') + '.';
-            $('done-ref').textContent = 'Réf. ' + record.ref;
-
-            cart = [];
-            saveCart();
-            updateCartUI();
-
-            $('checkout-form-view').style.display = 'none';
-            $('checkout-done').style.display = '';
-            toast('Commande ' + record.ref + ' confirmée !');
-            return false;
-        }
-
-        /* ---------- CART ---------- */
-        let cart = loadCart();
-        let promo = null;
-
-        function loadCart() {
-            try {
-                const raw = localStorage.getItem(STORAGE_KEY);
-                const parsed = raw ? JSON.parse(raw) : [];
-                if (!Array.isArray(parsed)) return [];
-                return parsed
-                    .filter(i => i && i.name && i.price > 0)
-                    .map(i => {
-                        const p = productById(i.id);
-                        // re-sync price/stock against the catalogue so old carts stay correct
-                        return p ? { id: p.id, name: p.name, price: p.price, qty: i.qty } : i;
-                    });
-            } catch (e) {
-                return [];
-            }
-        }
-
-        function saveCart() {
-            try { localStorage.setItem(STORAGE_KEY, JSON.stringify(cart)); } catch (e) {}
-        }
-
-        function subtotal() {
-            return cart.reduce((s, i) => s + i.price * i.qty, 0);
-        }
-
-        function discount() {
-            return promo ? Math.round(subtotal() * promo.pct / 100) : 0;
-        }
-
-        function shipping() {
-            const net = subtotal() - discount();
-            return (cart.length && net >= FREE_SHIPPING) ? 0 : (cart.length ? SHIPPING_FEE : 0);
-        }
-
-        function addToCart(idOrName, opts) {
-            const o = opts || {};
-            let p = productById(idOrName);
-            if (!p) p = productByName(idOrName);
-
-            // legacy signature: addToCart('Name', 35000)
-            if (typeof opts === 'number') {
-                p = { id: 'legacy-' + slug(idOrName), name: idOrName, price: opts, stock: 99, art: 'bear' };
-            }
-            if (!p) return;
-
-            const existing = cart.find(i => i.id === p.id);
-            const want = o.qty || 1;
-            const cap = p.stock === undefined ? Infinity : p.stock;
-
-            if (existing) {
-                const target = Math.min(cap, existing.qty + want);
-                if (target === existing.qty) {
-                    toast('Stock maximum atteint pour ' + p.name);
-                    return;
-                }
-                existing.qty = target;
-            } else {
-                if (cap <= 0) { toast(p.name + ' est en rupture de stock'); return; }
-                cart.push({ id: p.id, name: p.name, price: p.price, qty: Math.min(want, cap) });
-            }
-
-            saveCart();
-            updateCartUI();
-            if (!o.quiet) {
-                toast(p.name + (want > 1 ? ' ×' + want : '') + ' ajouté au panier');
-                showAdded(p);
-            }
-        }
-
-        /* ---------- PANNEAU "AJOUTÉ AU PANIER" (conversion) ---------- */
-        let addedTimer = null;
-
-        function showAdded(p) {
-            const panel = $('added-panel');
-            const lines = cart.map(i => {
-                const prod = productById(i.id);
-                return `
-                <div class="added-line">
-                    <span class="mini">${prod ? ART[prod.art] : ''}</span>
-                    <span>${esc(i.name)}${i.qty > 1 ? ' ×' + i.qty : ''}</span>
-                    <b>${fmt(i.price * i.qty)}</b>
-                </div>`;
-            }).join('');
-
-            $('added-items').innerHTML = lines;
-            $('added-title').textContent = p.name + ' ajouté au panier';
-            $('added-sub').textContent = 'Votre panier contient ' + cart.reduce((s, i) => s + i.qty, 0) + ' article(s)';
-
-            const total = subtotal();
-            const remaining = Math.max(0, FREE_SHIPPING - subtotal());
-            $('added-perks').innerHTML = remaining === 0
-                ? `<div>${ic('gift')} <b>Livraison gratuite</b> débloquée sur cette commande</div>`
-                : `<div>${ic('truck')} Plus que <b>${fmt(remaining)}</b> pour la livraison offerte</div>`;
-
-            panel.classList.add('show');
-            clearTimeout(addedTimer);
-            addedTimer = setTimeout(hideAdded, 7000);
-        }
-
-        function hideAdded() {
-            clearTimeout(addedTimer);
-            $('added-panel').classList.remove('show');
-        }
-
-        function changeQty(id, delta) {
-            const item = cart.find(i => i.id === id);
-            if (!item) return;
-            const p = productById(id);
-            const cap = p && p.stock !== undefined ? p.stock : Infinity;
-            if (delta > 0 && item.qty >= cap) { toast('Stock maximum atteint'); return; }
-            item.qty += delta;
-            if (item.qty <= 0) cart = cart.filter(i => i.id !== id);
-            saveCart();
-            updateCartUI();
-        }
-
-        function removeItem(id) {
-            const item = cart.find(i => i.id === id);
-            cart = cart.filter(i => i.id !== id);
-            saveCart();
-            updateCartUI();
-            if (item) toast(item.name + ' retiré du panier');
-        }
-
-        function clearCart() {
-            if (!cart.length) return;
-            cart = [];
-            promo = null;
-            saveCart();
-            updateCartUI();
-            toast('Panier vidé');
-        }
-
-        function updateCartUI() {
-            const count = cart.reduce((s, i) => s + i.qty, 0);
-            $('cart-count').textContent = count;
-
-            const itemsDiv = $('cart-items');
-            if (!cart.length) {
-                itemsDiv.innerHTML = '<p style="color:var(--cream);opacity:0.5;text-align:center;padding:20px;">Votre panier est vide</p>';
-            } else {
-                itemsDiv.innerHTML = cart.map(i => `
-                    <div class="cart-item">
-                        <div class="cart-item-info">
-                            <span class="cart-item-name">${esc(i.name)}</span>
-                            <span class="qty-control">
-                                <button class="qty-btn" onclick="changeQty('${esc(i.id)}', -1)" aria-label="Retirer un">&minus;</button>
-                                <span class="qty-value">${i.qty}</span>
-                                <button class="qty-btn" onclick="changeQty('${esc(i.id)}', 1)" aria-label="Ajouter un">+</button>
-                            </span>
-                        </div>
-                        <span class="cart-item-price">${fmt(i.price * i.qty)}</span>
-                        <button class="cart-item-remove" onclick="removeItem('${esc(i.id)}')" aria-label="Supprimer ${esc(i.name)}">&times;</button>
-                    </div>
-                `).join('');
-            }
-
-            const total = subtotal() - discount();
-            const ship = shipping();
-
-            const disc = discount();
-            $('cart-summary').innerHTML = cart.length ? `
-                <div class="cart-line"><span>Sous-total</span><span>${fmt(subtotal())}</span></div>
-                ${disc ? `<div class="cart-line discount"><span>Remise ${promo.code} (${promo.pct}%)</span><span>-${fmt(disc)}</span></div>` : ''}
-                <div class="cart-line"><span>Livraison</span><span>${ship === 0 ? 'Offerte' : fmt(ship)}</span></div>
-            ` : '';
-
-            $('cart-total-price').textContent = fmt(total + ship);
-
-            // Free shipping progress
-            const remaining = Math.max(0, FREE_SHIPPING - subtotal());
-            $('ship-fill').style.width = Math.min(100, (subtotal() / FREE_SHIPPING) * 100) + '%';
-            $('ship-msg').innerHTML = !cart.length
-                ? 'Livraison offerte dès ' + fmt(FREE_SHIPPING) + ' d\'achat'
-                : remaining === 0
-                    ? `${ic('gift')} <b>Livraison gratuite</b> débloquée !`
-                    : 'Plus que <b>' + fmt(remaining) + '</b> pour la livraison gratuite';
-
-            $('checkout-btn').disabled = !cart.length;
-        }
-
-        function openCart() {
-            $('cart-modal').classList.add('active');
-            document.body.style.overflow = 'hidden';
-            pushModal('cart-modal');
-            updateCartUI();
-        }
-
-        function closeCart() {
-            $('cart-modal').classList.remove('active');
-            popModal('cart-modal');
-            if (!topModal()) document.body.style.overflow = '';
-        }
-
-        function checkout() {
-            openCheckout();
-        }
-
-        /* Pile de modales : on ferme toujours celle ouverte en dernier. */
-        const modalStack = [];
-
-        function pushModal(id) {
-            const i = modalStack.indexOf(id);
-            if (i >= 0) modalStack.splice(i, 1);
-            modalStack.push(id);
-        }
-
-        function popModal(id) {
-            const i = modalStack.lastIndexOf(id);
-            if (i >= 0) modalStack.splice(i, 1);
-        }
-
-        function topModal() {
-            const id = modalStack[modalStack.length - 1];
-            const el = id ? $(id) : null;
-            // purge stale entries defensively
-            while (id && (!el || !el.classList.contains('active'))) {
-                popModal(id);
-            }
-            return el || null;
-        }
-
-        const MODAL_CLOSERS = {
-            lightbox: closeLightbox,
-            'checkout-modal': closeCheckout,
-            'detail-modal': closeDetail,
-            'legal-modal': closeLegal,
-            'cart-modal': closeCart
-        };
-
-        function closeTopModal() {
-            const m = topModal();
-            if (!m) { closeMenu(); return true; }
-            if (MODAL_CLOSERS[m.id]) MODAL_CLOSERS[m.id]();
-            return true;
-        }
-
-        document.addEventListener('keydown', e => {
-            if (e.key === 'Escape') { e.preventDefault(); closeTopModal(); return; }
-
-            if (e.key === 'Tab') {
-                const open = topModal();
-                if (!open) return;
-                const panel = open.querySelector('.checkout-content, .cart-content, .detail-content, .legal-content');
-                if (!panel) return;
-                const items = focusables(panel);
-                if (!items.length) return;
-                const first = items[0], last = items[items.length - 1];
-                if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
-                else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
-            }
-        });
-
-        /* ---------- BACK TO TOP ---------- */
-        const toTop = $('to-top');
-        window.addEventListener('scroll', () => {
-            toTop.classList.toggle('show', window.scrollY > 500);
-        }, { passive: true });
-
-        /* ---------- SCROLL REVEAL ---------- */
-        let revealObserver = null;
-
-        function observeReveals() {
-            const targets = document.querySelectorAll(
-                '.reveal:not(.visible):not([data-observed])'
-            );
-            if (!('IntersectionObserver' in window)) {
-                targets.forEach(el => el.classList.add('visible'));
-                return;
-            }
-            if (!revealObserver) {
-                revealObserver = new IntersectionObserver(entries => {
-                    entries.forEach((entry, i) => {
-                        if (entry.isIntersecting) {
-                            setTimeout(() => entry.target.classList.add('visible'), i * 60);
-                            revealObserver.unobserve(entry.target);
-                        }
-                    });
-                }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-            }
-            targets.forEach(el => {
-                el.dataset.observed = '1';
-                revealObserver.observe(el);
-            });
-        }
-
-        /* ---------- FAQ ACCORDION ---------- */
-        document.querySelectorAll('.faq-item').forEach(item => {
-            const q = item.querySelector('.faq-q');
-            const a = item.querySelector('.faq-a');
-            q.addEventListener('click', () => {
-                const isOpen = item.classList.contains('open');
-                document.querySelectorAll('.faq-item.open').forEach(other => {
-                    other.classList.remove('open');
-                    other.querySelector('.faq-a').style.maxHeight = null;
-                });
-                if (!isOpen) {
-                    item.classList.add('open');
-                    a.style.maxHeight = a.scrollHeight + 'px';
-                }
-            });
-        });
-
-        /* ---------- SMOOTH SCROLL ---------- */
-        document.querySelectorAll('a[href^="#"]').forEach(a => {
-            a.addEventListener('click', e => {
-                e.preventDefault();
-                const target = document.querySelector(a.getAttribute('href'));
-                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            });
-        });
-
-        /* ---------- FILTRE : CATALOGUE RÉALIGÉ ---------- */
+  </section>
+
+  <section class="section" id="categories">
+    <div class="wrap">
+      <p class="eyebrow">Par qui ?</p>
+      <h2>Six univers, six façons de faire plaisir</h2>
+      <p class="lede" style="margin-bottom:2.4rem">Chaque univers a ses propres critères. Ce qui convient à un ado ne convient pas à un grand-parent, et un cadeau raté coûte plus cher qu'un cadeau absent.</p>
+      <div class="grid grid--3">
         
-        /* ---------- SYNCHRONISATION STOCK / FAVORIS ---------- */
-        function refreshCardStates() {
-            cards().forEach(card => {
-                const p = productById(card.dataset.id);
-                if (!p) return;
-                const btn = card.querySelector('.add-to-cart');
-                if (btn) {
-                    btn.disabled = p.stock <= 0;
-                    btn.textContent = p.stock <= 0 ? 'Indisponible' : 'Ajouter';
-                }
-            });
-        }
+      <article class="card reveal">
+        <div class="card__media"><img src="img/coffret-or.jpg" alt="Coffret Prestige Or" loading="lazy" decoding="async" width="400" height="300"></div>
+        <div class="card__body">
+          <h3 class="card__title"><a href="coffrets-cadeaux/index.html">Coffrets cadeaux</a></h3>
+          <p class="card__text">Un écrin, un champagne, des chocolats : le cadeau se donne tel quel, sans songer à l&#39;emballer.</p>
+          <span class="card__link">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card__media"></div>
+        <div class="card__body">
+          <h3 class="card__title"><a href="montres/index.html">Montres</a></h3>
+          <p class="card__text">L&#39;objet que l&#39;on garde. Des montres qui se portent au quotidien plutôt que de prendre la poussière dans leur écrin.</p>
+          <span class="card__link">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card__media"><img src="img/sac.jpg" alt="Sac main cuir italien" loading="lazy" decoding="async" width="400" height="300"></div>
+        <div class="card__body">
+          <h3 class="card__title"><a href="maroquinerie/index.html">Maroquinerie</a></h3>
+          <p class="card__text">Cuir pleine fleur tanné végétal : une pièce qui se patine au fil des années au lieu de s&#39;user.</p>
+          <span class="card__link">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card__media"><img src="img/cave.jpg" alt="Cave à vin premium" loading="lazy" decoding="async" width="400" height="300"></div>
+        <div class="card__body">
+          <h3 class="card__title"><a href="degustation/index.html">Dégustation</a></h3>
+          <p class="card__text">Trois grands crus, des verres en cristal, et de quoi faire enfin la différence entre un vin et un autre.</p>
+          <span class="card__link">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card__media"><img src="img/bougies.jpg" alt="Collection bougies luxe" loading="lazy" decoding="async" width="400" height="300"></div>
+        <div class="card__body">
+          <h3 class="card__title"><a href="maison/index.html">Maison</a></h3>
+          <p class="card__text">La lumière basse, la cire de soja, un parfum qui reste. Ce qui change vraiment l&#39;ambiance d&#39;une pièce.</p>
+          <span class="card__link">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card__media"></div>
+        <div class="card__body">
+          <h3 class="card__title"><a href="high-tech/index.html">High-tech</a></h3>
+          <p class="card__text">Un salon transformé en cinéma, ou un casque qui voyage bien. Le high-tech qui sert vraiment.</p>
+          <span class="card__link">Découvrir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </article>
+      </div>
+    </div>
+  </section>
 
-        /* ---------- SÉLECTEUR DE CADEAU ---------- */
-        function runFinder() {
-            const who = $('finder-who').value;
-            const max = +$('finder-budget').value;
-            state.maxPrice = max;
-            budgetSelect.value = max ? String(max) : '0';
-            setFilter(who);
-            const shown = cards().filter(c => !c.hidden).length;
-            const cat = CATEGORIES[who];
-            $('finder-result').innerHTML = shown
-                ? '<b>' + shown + '</b> idée' + (shown > 1 ? 's' : '') + ' pour ' + esc(cat ? cat.icon + ' un ' + cat.label.toLowerCase() : 'votre choix') +
-                  ' dans un budget de ' + (max ? fmt(max) : 'tout budget') + '.'
-                : 'Aucun cadeau ne correspond à ce budget — essayez un montant plus élevé.';
-        }
+  <section class="section section--tight">
+    <div class="wrap">
+      <p class="eyebrow">La sélection</p>
+      <h2>Ce que nous retenons cette année</h2>
+      <p class="lede" style="margin-bottom:2.4rem">Huit ou neuf pièces, pas davantage. Chacune a été retenue parce qu'elle se distingue par un point précis et vérifiable, pas parce qu'elle fait partie d'un lot.</p>
+      <div class="grid grid--3">
+        
+      <article class="card reveal">
+        <div class="card__media"><img src="img/coffret-or.jpg" alt="Coffret Prestige Or" loading="lazy" decoding="async" width="400" height="300"></div>
+        <div class="card__body">
+          <span class="card__kicker">Coffrets cadeaux</span>
+          <h3 class="card__title"><a href="coffrets-cadeaux/coffret-or/index.html">Coffret Prestige Or</a></h3>
+          <p class="card__text">Champagne millésimé, trente-six chocolats artisanaux et accessoires cuir, dans un écrin de bois laqué doré.</p>
+          <span class="card__link">Voir la fiche <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card__media"><svg class="art-fallback" viewBox="0 0 400 300" role="img" aria-label="Montre Élégance" xmlns="http://www.w3.org/2000/svg">
+      <defs><linearGradient id="gmontre" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#c9a84c" stop-opacity=".16"/>
+        <stop offset="100%" stop-color="#c9a84c" stop-opacity=".03"/>
+      </linearGradient></defs>
+      <rect width="400" height="300" fill="url(#gmontre)"/>
+      <g fill="none" stroke="#c9a84c" stroke-opacity=".24" stroke-width="1.5">
+        <circle cx="200" cy="150" r="96"/><circle cx="200" cy="150" r="70" stroke-dasharray="3 7"/>
+        <path d="M104 150h192M200 54v192"/>
+      </g>
+      <text x="200" y="150" text-anchor="middle" dominant-baseline="central"
+            font-family="Georgia, serif" font-size="62" fill="#c9a84c" fill-opacity=".6">MÉ</text>
+    </svg></div>
+        <div class="card__body">
+          <span class="card__kicker">Montres</span>
+          <h3 class="card__title"><a href="montres/montre/index.html">Montre Élégance</a></h3>
+          <p class="card__text">Mouvement automatique vingt et un rubis, boîtier acier 316L, bracelet cuir de veau. Réserve quarante heures.</p>
+          <span class="card__link">Voir la fiche <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card__media"><img src="img/cave.jpg" alt="Cave à vin premium" loading="lazy" decoding="async" width="400" height="300"></div>
+        <div class="card__body">
+          <span class="card__kicker">Dégustation</span>
+          <h3 class="card__title"><a href="degustation/cave/index.html">Cave à vin premium</a></h3>
+          <p class="card__text">Trois grands crus, douze verres en cristal sans plomb et l&#39;outillage de sommelier complet.</p>
+          <span class="card__link">Voir la fiche <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card__media"><img src="img/sac.jpg" alt="Sac main cuir italien" loading="lazy" decoding="async" width="400" height="300"></div>
+        <div class="card__body">
+          <span class="card__kicker">Maroquinerie</span>
+          <h3 class="card__title"><a href="maroquinerie/sac/index.html">Sac main cuir italien</a></h3>
+          <p class="card__text">Cuir pleine fleur tanné végétal, doublure daim, finitions or. Bandoulière amovible.</p>
+          <span class="card__link">Voir la fiche <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card__media"><svg class="art-fallback" viewBox="0 0 400 300" role="img" aria-label="Casque audio premium" xmlns="http://www.w3.org/2000/svg">
+      <defs><linearGradient id="gcasque" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#c9a84c" stop-opacity=".16"/>
+        <stop offset="100%" stop-color="#c9a84c" stop-opacity=".03"/>
+      </linearGradient></defs>
+      <rect width="400" height="300" fill="url(#gcasque)"/>
+      <g fill="none" stroke="#c9a84c" stroke-opacity=".24" stroke-width="1.5">
+        <circle cx="200" cy="150" r="96"/><circle cx="200" cy="150" r="70" stroke-dasharray="3 7"/>
+        <path d="M104 150h192M200 54v192"/>
+      </g>
+      <text x="200" y="150" text-anchor="middle" dominant-baseline="central"
+            font-family="Georgia, serif" font-size="62" fill="#c9a84c" fill-opacity=".6">CA</text>
+    </svg></div>
+        <div class="card__body">
+          <span class="card__kicker">High-tech</span>
+          <h3 class="card__title"><a href="high-tech/casque/index.html">Casque audio premium</a></h3>
+          <p class="card__text">Réduction de bruit hybride adaptative, quarante heures d&#39;autonomie et étui de transport rigide.</p>
+          <span class="card__link">Voir la fiche <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card__media"><img src="img/bougies.jpg" alt="Collection bougies luxe" loading="lazy" decoding="async" width="400" height="300"></div>
+        <div class="card__body">
+          <span class="card__kicker">Maison</span>
+          <h3 class="card__title"><a href="maison/bougies/index.html">Collection bougies luxe</a></h3>
+          <p class="card__text">Six bougies en cire de soja, mèches coton sans plomb, parfums développés à Grasse.</p>
+          <span class="card__link">Voir la fiche <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </article>
+      </div>
+      <div class="grid grid--3" style="margin-top:1.9rem">
+        
+      <article class="card reveal">
+        <div class="card__media"><img src="img/projecteur.jpg" alt="Vidéoprojecteur 4K" loading="lazy" decoding="async" width="400" height="300"></div>
+        <div class="card__body">
+          <span class="card__kicker">High-tech</span>
+          <h3 class="card__title"><a href="high-tech/projecteur/index.html">Vidéoprojecteur 4K</a></h3>
+          <p class="card__text">Trois mille lumens ISO, Dolby Vision, applications de streaming intégrées. Le salon devient un cinéma.</p>
+          <span class="card__link">Voir la fiche <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card__media"><img src="img/chocolats.jpg" alt="Coffret chocolats belges" loading="lazy" decoding="async" width="400" height="300"></div>
+        <div class="card__body">
+          <span class="card__kicker">Dégustation</span>
+          <h3 class="card__title"><a href="degustation/chocolats/index.html">Coffret chocolats belges</a></h3>
+          <p class="card__text">Quarante-huit pièces tempérées à la main. Noir, lait, noisette, en boîte isotherme.</p>
+          <span class="card__link">Voir la fiche <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </article>
+      </div>
+    </div>
+  </section>
 
-        /* ---------- INIT ---------- */
-        renderCatalog();
-        initNewsletter();
-        updateCartUI();
-        initWishlist();
-        applyFilters();
-        refreshCardStates();
-        tickMiniTimers();
-        setInterval(tickMiniTimers, 30000);
-    </script>
+  <section class="section">
+    <div class="wrap">
+      <div class="cta">
+        <h2>Vous ne savez pas par où commencer ?</h2>
+        <p>Répondez à trois questions : pour qui, dans quel budget, et ce que la personne fait de ses soirées. Le guide donne la méthode, pas la réponse toute faite.</p>
+        <a class="btn" href="guide/index.html">Ouvrir le guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+
+    <section class="section section--tight" aria-labelledby="faq-h">
+      <div class="wrap">
+        <p class="eyebrow">Questions</p>
+        <h2 id="faq-h">Les questions qui reviennent le plus</h2>
+        <div class="faq" style="max-width:70ch">
+          <details>
+            <summary>Comment choisir un coffret cadeau qui ne disappoint pas ?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+            <div><p>Trois choses : la cohérence du contenu, la qualité de la présentation, et la taille. Un coffret qui réunit des objets complémentaires, dans un écrin soigné et de taille juste, est presque toujours un bon choix.</p></div>
+          </details>
+          <details>
+            <summary>Les coffrets de champagne sont-ils de bons cadeaux ?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+            <div><p>Oui, à condition d&#39;y ajouter quelque chose. Un coffret de champagne seul est un peu court ; associé à des chocolats ou à des verres, il devient un vrai cadeau de fête. Vérifiez aussi la température de stockage, qui conditionne la qualité à l&#39;ouverture.</p></div>
+          </details>
+          <details>
+            <summary>Faut-il offrir un coffret ou acheter les produits séparément ?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+            <div><p>Le coffret coûte généralement quinze à vingt-cinq pour cent de plus que les produits achetés séparément, mais il apporte l&#39;emballage, la présentation et l&#39;effet prêt à offrir. Si le destinataire est exigeant sur la présentation, le supplément en vaut la peine.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:.8rem">
+          <span class="brand__mark" aria-hidden="true">N</span>
+          <span>
+            <span class="brand__name">Noël Prestige</span>
+            <span class="brand__year">NOËL 2026</span>
+          </span>
+        </a>
+        <p style="color:var(--ink-faint);max-width:34ch;margin:0">L&#39;art d&#39;offrir ce qui compte.</p>
+      </div>
+      <div>
+        <h2>Noël</h2>
+        <ul><li><a href="coffrets-cadeaux/index.html">Coffrets</a></li><li><a href="montres/index.html">Montres</a></li><li><a href="maroquinerie/index.html">Maroquinerie</a></li><li><a href="degustation/index.html">Dégustation</a></li><li><a href="maison/index.html">Maison</a></li><li><a href="high-tech/index.html">High-tech</a></li></ul>
+      </div>
+      <div>
+        <h2>Le site</h2>
+        <ul><li><a href="a-propos/index.html">À propos</a></li><li><a href="guide/index.html">Guide d&#39;achat</a></li><li><a href="mentions-legales/index.html">Mentions légales</a></li></ul>
+      </div>
+      <div>
+        <h2>Univers</h2>
+        <ul><li><a href="coffrets-cadeaux/index.html">Coffrets</a></li><li><a href="montres/index.html">Montres</a></li><li><a href="maroquinerie/index.html">Maroquinerie</a></li><li><a href="degustation/index.html">Dégustation</a></li></ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 Noël Prestige</span>
+      <span>Sélection éditoriale indépendante. Aucun lien commercial, aucune donnée collectée.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js" defer></script>
 </body>
 </html>
