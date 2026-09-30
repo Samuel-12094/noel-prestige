@@ -1,6 +1,12 @@
 (function () {
   'use strict';
 
+  var reduce = window.matchMedia &&
+               window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* =========================================================
+     1. MENU MOBILE
+     ========================================================= */
   var toggle = document.querySelector('.nav-toggle');
   if (toggle) {
     toggle.addEventListener('click', function () {
@@ -23,6 +29,22 @@
     });
   }
 
+  /* =========================================================
+     2. HEADER AU SCROLL
+     ========================================================= */
+  var header = document.querySelector('.header');
+  if (header) {
+    var onScrollHeader = function () {
+      var y = window.scrollY || window.pageYOffset;
+      header.classList.toggle('is-scrolled', y > 120);
+    };
+    window.addEventListener('scroll', onScrollHeader, { passive: true });
+    onScrollHeader();
+  }
+
+  /* =========================================================
+     3. REVEAL GÉNÉRIQUE
+     ========================================================= */
   var targets = document.querySelectorAll('.reveal');
   if (!('IntersectionObserver' in window) || !targets.length) {
     for (var i = 0; i < targets.length; i++) targets[i].classList.add('is-visible');
@@ -40,48 +62,88 @@
     }
   }
 
-  /* --- parallaxe légère dans le héros : l'image et le filigrane bougent
-         à des vitesses différentes, ce qui crée la profondeur. Désactivé
-         si l'utilisateur préfère réduire les animations. */
-  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (!reduce && 'IntersectionObserver' in window) {
-    var hero = document.querySelector('.hero');
-    if (hero) {
-      var layers = [
-        { el: hero.querySelector('.hero__img'), f: 14 },
-        { el: hero.querySelector('.hero__star--a'), f: -10 },
-        { el: hero.querySelector('.hero__star--b'), f: -18 },
-        { el: hero.querySelector('.hero__badge'), f: 6 }
-      ].filter(function (l) { return l.el; });
+  /* =========================================================
+     4. S2 OUVERTURE — filet d'or
+     ========================================================= */
+  var ouvRule = document.querySelector('.s-ouverture__rule');
+  if (ouvRule && 'IntersectionObserver' in window) {
+    var ouvIO = new IntersectionObserver(function (entries) {
+      for (var o = 0; o < entries.length; o++) {
+        if (!entries[o].isIntersecting) continue;
+        ouvRule.classList.add('is-on');
+        ouvIO.disconnect();
+        break;
+      }
+    }, { threshold: 0.3 });
+    ouvIO.observe(ouvRule);
+  } else if (ouvRule) {
+    ouvRule.classList.add('is-on');
+  }
 
-      var ticking = false;
-      var apply = function () {
-        ticking = false;
-        var r = hero.getBoundingClientRect();
-        if (r.bottom < -80 || r.top > window.innerHeight + 80) return;
-        var p = (r.top + r.height / 2 - window.innerHeight / 2) / window.innerHeight;
-        layers.forEach(function (l) {
-          l.el.style.transform = 'translate3d(0,' + (p * l.f).toFixed(2) + 'px,0)';
-        });
+  /* =========================================================
+     5. CTA FIL DU COMMISSAIRE
+     ========================================================= */
+  var thread = document.querySelector('.cta-thread');
+  if (thread) {
+    var threadTarget = document.querySelector('#ouverture') || document.querySelector('.s-ouverture');
+    thread.addEventListener('click', function (e) {
+      if (reduce || !threadTarget) return;
+      e.preventDefault();
+      if (thread.classList.contains('is-snapped')) {
+        threadTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        return;
+      }
+      thread.classList.add('is-snapped');
+      setTimeout(function () {
+        threadTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 520);
+      setTimeout(function () {
+        thread.classList.remove('is-snapped');
+      }, 2400);
+    });
+  }
+
+  /* =========================================================
+     6. HERO VITRINE — filet de lumière + rotation 3D
+     ========================================================= */
+  var prestigeHero = document.querySelector('.hero-v2--prestige');
+  if (prestigeHero && !reduce) {
+    var vitrine = prestigeHero.querySelector('.hero-v2__vitrine');
+    var beam    = prestigeHero.querySelector('.hero-v2__light-beam');
+    var object  = prestigeHero.querySelector('.hero-v2__object');
+
+    if (vitrine && beam && object &&
+        window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      var onMove = function (e) {
+        var r = vitrine.getBoundingClientRect();
+        var x = (e.clientX - r.left) / r.width  - .5;
+        var y = (e.clientY - r.top)  / r.height - .5;
+        beam.style.setProperty('--beam-x', (x * 80).toFixed(1) + 'px');
+        object.style.setProperty('--ry', (x * 8).toFixed(2) + 'deg');
+        object.style.setProperty('--rx', (-y * 6).toFixed(2) + 'deg');
       };
-      var onScroll = function () {
-        if (ticking) return;
-        ticking = true;
-        requestAnimationFrame(apply);
-      };
-      window.addEventListener('scroll', onScroll, { passive: true });
-      window.addEventListener('resize', onScroll, { passive: true });
-      apply();
+      vitrine.addEventListener('mousemove', onMove, { passive: true });
+      vitrine.addEventListener('mouseleave', function () {
+        object.style.setProperty('--ry', '0deg');
+        object.style.setProperty('--rx', '0deg');
+        beam.style.setProperty('--beam-x', '0');
+      });
     }
   }
 
+  /* =========================================================
+     7. FAQ — accordéon exclusif
+     ========================================================= */
   var faqs = document.querySelectorAll('.faq details');
   if (faqs.length > 1) {
     for (var n = 0; n < faqs.length; n++) {
       faqs[n].addEventListener('toggle', function (ev) {
         if (!ev.target.open) return;
-        for (var m = 0; m < faqs.length; m++) if (faqs[m] !== ev.target) faqs[m].open = false;
+        for (var m = 0; m < faqs.length; m++) {
+          if (faqs[m] !== ev.target) faqs[m].open = false;
+        }
       });
     }
   }
+
 })();
