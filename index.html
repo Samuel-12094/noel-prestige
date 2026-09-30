@@ -56,36 +56,46 @@
 <main id="main">
 
   <section class="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__star hero__star--a"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 1.8l2.6 6.1 6.6.5-5 4.3 1.5 6.4L12 15.9 6.3 19.1l1.5-6.4-5-4.3 6.6-.5z"/></svg></div>
+      <div class="hero__star hero__star--b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><path d="M12 1.8l2.6 6.1 6.6.5-5 4.3 1.5 6.4L12 15.9 6.3 19.1l1.5-6.4-5-4.3 6.6-.5z"/></svg></div>
+      <div class="hero__glow"></div>
+    </div>
+
     <div class="wrap hero__in">
-      <div>
-        <p class="eyebrow" data-rise="1">Sélection 2026 — 8 pièces</p>
+      <div class="hero__copy">
+        <p class="hero__eyebrow" data-rise="1">Sélection 2026 — 8 pièces</p>
         <h1 data-rise="2">L&#39;art d&#39;offrir ce qui <em>compte</em></h1>
         <p class="lede" data-rise="3">Des cadeaux d&#39;exception, choisis un par un. Pas de catalogue infini : huit pièces longuement regardées, dont on peut dire précisément ce qu&#39;elles ont de plus que les autres, et à qui elles conviennent.</p>
-        <div class="hero__actions" data-rise="4">
-          <a class="btn btn--primary" href="#categories">Voir la sélection <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="btn btn--ghost" href="guide/index.html">Guide d&#39;achat</a>
+        <div class="hero__cta" data-rise="4">
+          <a class="btn-discover" href="#categories">Découvrir la sélection<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn-ghost" href="guide/index.html">Notre méthode</a>
         </div>
-        <div class="hero__stats">
-          <div class="hero__stat"><strong>8</strong><span>produits retenus</span></div>
-          <div class="hero__stat"><strong>6</strong><span>univers de cadeau</span></div>
-          <div class="hero__stat"><strong>2026</strong><span>édition en cours</span></div>
+        <div class="hero__meta" data-rise="5">
+          <div><strong>8</strong><span>produits retenus</span></div>
+          <div><strong>6</strong><span>univers de cadeau</span></div>
+          <div><strong>2026</strong><span>édition en cours</span></div>
         </div>
       </div>
-      <div class="mosaic" data-rise="3">
-        <a class="mosaic__item" href="coffrets-cadeaux/index.html">
+
+      <div class="hero__visual" data-rise="3">
+        <div class="hero__frame" aria-hidden="true"></div>
+        <div class="hero__img">
           <img src="img/coffret-or.jpg" alt="Coffret Prestige Or" loading="lazy" decoding="async" width="400" height="300">
-          <figcaption>Coffrets cadeaux<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></figcaption>
-        </a>
-        <a class="mosaic__item" href="degustation/index.html">
-          <img src="img/cave.jpg" alt="Cave à vin premium" loading="lazy" decoding="async" width="400" height="300">
-          <figcaption>Dégustation<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></figcaption>
-        </a>
-        <a class="mosaic__item" href="high-tech/index.html">
-          <img src="img/casque.jpg" alt="Casque audio premium" loading="lazy" decoding="async" width="400" height="300">
-          <figcaption>High-tech<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></figcaption>
+          <div class="hero__caption">Coffrets cadeaux<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+        </div>
+        <a class="hero__badge" href="#categories">
+          <b>8</b>
+          <span>pièces retenues,<br>choisies une à une</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
       </div>
     </div>
+
+    <a class="hero__scroll" href="#categories">
+      Défiler
+      <i aria-hidden="true"></i>
+    </a>
   </section>
 
   <nav class="quicknav" aria-label="Accès rapide par univers">
